@@ -1,0 +1,129 @@
+{include file="../structure/HTMLBegin.tpl"}
+{include file="../structure/header.tpl"}
+{include file="../structure/bodyBegin.tpl"}
+<style>
+    .widget-head-title {
+        float:right;
+        display:block;
+        padding: 10px;
+    }
+</style>
+<!-- -->
+<!--<div class="admin-form">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <div class="widget worange">
+                    <div class="widget-head"><img src="{$imgDir}logos/min-perucatolica.png"/></div>
+                    <div class="widget-content">
+                        <div class="padd">
+                            <form class="form-horizontal" action="principal.php">
+                                <div class="form-group">
+                                    <label class="control-label col-lg-3" for="inputUser">Usuario</label>
+                                    <div class="col-lg-9">
+                                        <input type="text" class="form-control" id="inputUser" placeholder="Usuario">
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <label class="control-label col-lg-3" for="inputPassword">Contraseña</label>
+                                    <div class="col-lg-9">
+                                        <input type="password" class="form-control" id="inputPassword" placeholder="Contraseña">
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <div class="col-lg-12">
+                                        <center><p style="font-weight:normal">
+                                                <label style="font-size:9px"><strong style="color:#F90">¡Importante!</strong> se debe utilizar la ultima version de Chrome o Firefox</label>&nbsp;<img src="{$imgDir}logos/chrome.png"/>&nbsp;
+                                                <img src="{$imgDir}logos/firefox.png"/><br />
+                                                <script>
+                                                    function get_browser_info() {
+                                                        var ua = navigator.userAgent, tem, M = ua.match(/(opera|chrome|safari|firefox|msie|trident(?=\/))\/?\s*(\d+)/i) || [];
+                                                        if (/trident/i.test(M[1])) {
+                                                            tem = /\brv[ :]+(\d+)/g.exec(ua) || [];
+                                                            return {
+                                                                name: 'IE ', version: (tem[1] || '')};
+                                                        }
+                                                        if (M[1] === 'Chrome') {
+                                                            tem = ua.match(/\bOPR\/(\d+)/)
+                                                            if (tem != null) {
+                                                                return {
+                                                                    name: 'Opera', version: tem[1]
+                                                                };
+                                                            }
+                                                        }
+                                                        M = M[2] ? [M[1], M[2]] : [navigator.appName, navigator.appVersion, '-?'];
+                                                        if ((tem = ua.match(/version\/(\d+)/i)) != null) {
+                                                            M.splice(1, 1, tem[1]);
+                                                        }
+                                                        return {
+                                                            name: M[0],
+                                                            version: M[1]
+                                                        };
+                                                    }
+                                                    var browser = get_browser_info();
+                                                    document.write('<span style="font-size:9px"><strong>Navegador: </strong>' + browser.name)
+                                                    document.write('&nbsp;')
+                                                    document.write('V. ' + browser.version + '<span>')
+                                                </script>
+                                            </p></center>
+                                    </div>
+                                </div>
+                                <div class="message"></div>
+                                <div class="col-lg-9 col-lg-offset-3">
+                                    <button id="btnlogin" type="button" class="btn btn-info btn-sm">Iniciar sesión</button>
+                                    <button type="reset" class="btn btn-default btn-sm">Limpiar</button>
+                                </div><br />
+                            </form>
+
+                        </div>
+                    </div>
+                    <div class="widget-head-title"><i class="fa fa-lock"></i> Acceso Seguro</div>
+                    <div class="widget-foot">¿Ha olvidado su contraseña? <a href="javascript:recoverPassword();">Click aquí</a></div>
+                </div>  
+            </div>
+        </div>
+    </div> 
+</div>-->
+
+
+<div class="error-page">
+    <div class="container">
+
+        <div class="row">
+            <div class="col-md-12">
+                <!-- Widget starts -->
+                <div class="widget">
+                    <!-- Widget head -->
+                    <div class="widget-head">
+                        <div class="pull-left">
+                            <img src="{$imgDir}logos/min-perucatolica.png"/>
+                        </div>
+                        <div class="widget-icons pull-right">
+                            <i class="fa fa-question-circle"></i> Error 
+                        </div>
+                        <div class="clearfix"></div>
+                    </div>
+                    <div class="widget-content">
+                        <div class="padd error">
+
+                            <h1>Opps!!! Error 404</h1>
+                            <br />
+                            <p>La página a la que intenta acceder no existe, por favor verifique el url al que está intentando ingresar. Se redireccionará al login en: <span class="text-danger"> <span id="countdown">10</span> seg </span>. </p>
+                            <p>{$urlReferer}</p>
+                            <br />
+                            <div class="horizontal-links">
+                                <a href="login.php">Login</a> | <a href="mailto:support@perucatolica.com?subject=Error 404&body=Ingre la URL a la que intentó acceder">Contáctanos</a>
+                            </div>
+                        </div>
+                        <div class="widget-foot">
+                            <!-- Footer goes here -->
+                        </div>
+                    </div>
+                </div>  
+            </div>
+        </div>
+    </div> 
+</div>
+
+{include file="../structure/bodyEnd.tpl"}
+{include file="../structure/HTMLEnd.tpl"}

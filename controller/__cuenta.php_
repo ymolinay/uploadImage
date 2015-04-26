@@ -1,0 +1,19 @@
+<?php
+
+session_start();
+require_once __DIR__.'/../model/dao/cuentaDAO.php';
+require_once __DIR__.'/../model/dao/gridDAO.php';
+
+$objCuentaDAO = new CuentaDAO();
+$objGridDAO = new GridDAO();
+
+$action = $_GET["action"];
+
+if ($action == "combobox") {
+    $cbx = array();
+    $combo = $objCuentaDAO->ExecuteCompleteCombobox();
+    foreach ($combo as $key => $val) {
+        $cbx[$key] = array("idCuenta"=>$val->idCuenta,"nombreComercial"=>$val->nombreComercial);
+    }
+    echo json_encode($cbx);
+}

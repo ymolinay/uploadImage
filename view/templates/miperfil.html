@@ -1,0 +1,105 @@
+{include file="../structure/HTMLBegin.tpl"}
+{include file="../structure/header.tpl"}
+{include file="../structure/bodyBegin.tpl"}
+<!-- -->
+{include file="../structure/topBanner.tpl"}
+<!-- -->
+{include file="../structure/headerContent.tpl"}
+
+{include file="../structure/beginContent.tpl"}
+
+{include file="../structure/navigationContent.tpl"}
+{include file="../structure/beginMainbarContent.tpl"}
+{include file="../structure/beginMatterContent.tpl"}
+<!-- contenido -->
+	{include file="../structure/beginWinget.tpl"}DATOS
+	{include file="../structure/contentWinget.tpl"}
+<form id="formPersonal" name="formPersonal" class="form-horizontal" role="form" >
+  <input id="idPersonal" name="idPersonal" type="text" class="notVisible" value="{$sessionIdPersonal}" >
+  <input id="idUsuario" name="idUsuario" type="text" class="notVisible" value="{$sessionIdUsuario}" >
+  <input id="inputNombre" name="inputNombre" type="text" class="notVisible" value="{$sessionUsuario}" >
+  <input id="userType" name="userType" type="hidden" value="bXl1c2Vy">
+  <style>
+			#imgUser{
+				margin-left: 10px;
+				padding: 5px;
+				background: #fff;
+				border: 1px solid #aaa;
+				max-width: 150px;}
+			.fieldUser{
+				margin-left: 10px;
+				padding:2px;
+			}
+			th{
+				text-align:right;
+			}
+			.tablePassword{
+				border: 1px solid #CCC;
+				background-color:#FFF;
+				box-shadow: 2px 2px 5px #999;
+			}
+			.fieldPassword{
+				padding:5px;
+			}
+			</style>
+    <table>
+      <tr>
+        <th>Apellidos y Nombres:</th>
+        <td><div id="userName" class="fieldUser"></div></td>
+        <td rowspan="7">
+        	{if  $sessionIdPerfil eq 2}
+            	<img id="imgUser" src="{$imgDir}/users/{$sessionIdUsuario}.jpg" />
+             {/if}
+        </td>
+      </tr>
+      <tr>
+        <th>DNI:</th>
+        <td><div id="userDNI" class="fieldUser"></div></td>
+      </tr>
+      <tr>
+        <th>Email:</th>
+        <td><div id="userEmail" class="fieldUser"></div></td>
+      </tr>
+      <tr>
+        <th>Teléfono:</th>
+        <td><div id="userTelefono" class="fieldUser"></div></td>
+      </tr>
+      <tr>
+        <th>Ubigeo:</th>
+        <td>
+        <select id="idUbigeo" name="idUbigeo" class="notVisible"></select>
+        <div id="userUbigeo" class="fieldUser"></div></td>
+      </tr>
+      <tr>
+        <th>Usuario:</th>
+        <td>
+        <div class="fieldUser">{$sessionUsuario}</div></td>
+      </tr>
+      <tr>
+        <th>Perfil:</th>
+        <td>
+        <div class="fieldUser">{$sessionPerfil}</div></td>
+      </tr>
+    </table>
+    <br />
+    <table class="tablePassword">
+    <tr><th class="fieldPassword">Contraseña</th>
+		<td class="fieldPassword"><input type="password" class="form-control" id="inputPassword" name="inputPassword" placeholder="Contraseña" value=""></td></tr>
+        <tr><th class="fieldPassword">Repetir Contraseña</th>
+		<td class="fieldPassword"><input type="password" class="form-control" id="inputRPassword" name="inputRPassword" placeholder="Repetir Contraseña" value=""></td></tr>
+    <tr><td >
+			
+			</td><td class="fieldPassword"><button type="button" class="btn btn-info btn-sm" onclick="confirmSave('cGVyc29uYWw=','Zm9ybVBlcnNvbmFs','','')" >Cambiar</button>&nbsp;<button type="reset" class="btn btn-default btn-sm" >Limpiar</button>
+</td></tr></table>
+  </form>
+     {include file="../structure/endWinget.tpl"}
+<!-- -->
+{include file="../structure/endMatterContent.tpl"}
+{include file="../structure/endMainbarContent.tpl"}
+
+{include file="../structure/endContent.tpl"}
+
+{include file="../structure/footer.tpl"}
+<!-- -->
+{include file="../structure/bodyEnd.tpl"}
+{include file="../structure/HTMLEnd.tpl"}

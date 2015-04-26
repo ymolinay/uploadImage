@@ -1,0 +1,220 @@
+{include file="../structure/HTMLBegin.tpl"}
+{include file="../structure/header.tpl"}
+{include file="../structure/bodyBegin.tpl"}
+<!-- -->
+{include file="../structure/topBanner.tpl"}
+<!-- -->
+{include file="../structure/headerContent.tpl"}
+
+{include file="../structure/beginContent.tpl"}
+
+{include file="../structure/navigationContent.tpl"}
+{include file="../structure/beginMainbarContent.tpl"}
+{include file="../structure/beginMatterContent.tpl"}
+<!-- contenido -->
+	<form id="formInscripcion" name="formInscripcion" class="form-horizontal" role="form" >
+    {include file="../structure/beginWinget.tpl"}DATOS PERSONALES
+	{include file="../structure/contentWinget.tpl"}
+    <input id="idInscripcion" name="idInscripcion" type="text" class="notVisible">
+    <input id="idInscripcionMarketing" name="idInscripcionMarketing" type="text" class="notVisible">
+    <input id="idPersonal" name="idPersonal" type="text" class="notVisible">
+    <!--<input id="userType" name="userType" type="hidden" value="YWx1bW5v">-->
+    <div class="form-group">
+    <label class="col-lg-2 control-label">Nombres</label>
+    <div class="col-lg-5">
+        <input id="insNombre" name="insNombre" type="text" class="form-control" placeholder="Nombres" >
+    </div>
+    </div>
+    <div class="form-group">
+    <label class="col-lg-2 control-label">Apellido Paterno</label>
+    <div class="col-lg-5">
+        <input id="insApellidoPaterno" name="insApellidoPaterno" type="text" class="form-control" placeholder="Apellido Paterno">
+    </div>
+    </div>
+    <div class="form-group">
+    <label class="col-lg-2 control-label">Apellido Materno</label>
+    <div class="col-lg-5">
+        <input id="insApellidoMaterno" name="insApellidoMaterno" type="text" class="form-control" placeholder="Apellido Materno">
+    </div>
+    </div>
+    <div class="form-group">
+    <label class="col-lg-2 control-label">DNI</label>
+    <div class="col-lg-3">
+        <input id="insDNI" name="insDNI" type="text" class="form-control" placeholder="DNI" maxlength="8" >
+    </div>
+    </div>
+    <div class="form-group">
+    <label class="col-lg-2 control-label">Sexo</label>
+    <div class="col-lg-5">
+        <div class="radio">
+            <label>
+                <input type="radio" name="insSexo" id="insSexoM" value="M" checked="checked">Masculino
+            </label>
+         </div>
+        <div class="radio">
+            <label>
+                <input type="radio" name="insSexo" id="insSexoF" value="F" >Femenino
+            </label>
+         </div>	
+    </div>
+    </div>
+    <div class="form-group">
+    <label class="col-lg-2 control-label">Estado Civil</label>
+    <div class="col-lg-3">
+        <select id="insEstadocivil" name="insEstadocivil" class="form-control">
+        <option value="1">SOLTERO</option>
+        <option value="2">CASADO</option>
+        <option value="3">VIUDO</option>
+        <option value="4">DIVORCIADO</option>
+        </select>
+    </div>
+    </div>
+    <div class="form-group">
+    <label class="col-lg-2 control-label">Fecha de Nacimiento</label>
+    <div class="col-lg-3">
+       <div id="insFNacimiento" name="insFNacimiento" class="input-append input-group dtpicker">
+              <input id="FNacimiento" name="FNacimiento" data-format="dd-MM-yyyy" type="text" class="form-control">
+              <span class="input-group-addon add-on">
+                  <i data-time-icon="fa fa-times" data-date-icon="fa fa-calendar" class="fa fa-calendar"></i>
+              </span>
+          </div>
+    </div>
+    </div>
+    <div class="form-group">
+    <label class="col-lg-2 control-label">Nacionalidad</label>
+    <div class="col-lg-5">
+        <div class="radio">
+            <label>
+                <input type="radio" name="insNacionalidad" id="insNacionalidadN" value="1" checked="checked">Peruana
+            </label>
+         </div>
+        <div class="radio">
+            <label>
+                <input type="radio" name="insNacionalidad" id="insNacionalidadE" value="2" >Extranjera
+            </label>
+         </div>	
+    </div>
+    </div>
+    <div class="col-lg-5 col-lg-offset-5">
+		<button type="button" class="btn btn-info btn-sm" onclick=javascript:confirmSave("aW5zY3JpcGNpb24=","Zm9ybUluc2NyaXBjaW9u","finalizarInscripcion()","") >Registrar</button>
+		<button type="reset" class="btn btn-default btn-sm" >Limpiar</button>
+	</div><br />
+    {include file="../structure/endWinget.tpl"}
+    
+    {include file="../structure/beginWinget.tpl"}LOCALIZACIÓN
+	{include file="../structure/contentWinget.tpl"}
+    <div class="form-group">
+            <label class="col-lg-2 control-label">Dirección</label>
+            <div class="col-lg-5">
+                <textarea id="insDireccion" name="insDireccion" class="form-control" rows="5" placeholder="Dirección"></textarea>
+            </div>
+        </div>
+	<div class="form-group">
+    <label class="col-lg-2 control-label">Ubigeo</label>
+    <div class="col-lg-3">
+        <select id="idUbigeo" name="idUbigeo" class="form-control">
+        	<option value="">-- SELECCIONE --</option>
+        </select>
+    </div>    
+    </div>
+    <div class="col-lg-5 col-lg-offset-5">
+		<button type="button" class="btn btn-info btn-sm" onclick=javascript:confirmSave("aW5zY3JpcGNpb24=","Zm9ybUluc2NyaXBjaW9u","finalizarInscripcion()","") >Registrar</button>
+		<button type="reset" class="btn btn-default btn-sm" >Limpiar</button>
+	</div><br />
+    {include file="../structure/endWinget.tpl"}
+    
+    {include file="../structure/beginWinget.tpl"}DATOS COMPLEMENTARIOS
+	{include file="../structure/contentWinget.tpl"}
+	 <div class="form-group">
+            <label class="col-lg-2 control-label">Email</label>
+            <div class="col-lg-5">
+                <input id="insEmail" name="insEmail" type="text" class="form-control" placeholder="usuario@dominio" >
+            </div>
+        </div>
+        <div class="form-group">
+            <label class="col-lg-2 control-label">Teléfono</label>
+            <div class="col-lg-4">
+                <input id="insTelefono" name="insTelefono" type="text" class="form-control" placeholder="Fijo/Movil" >
+            </div>
+        </div>
+    <div class="col-lg-5 col-lg-offset-5">
+		<button type="button" class="btn btn-info btn-sm" onclick=javascript:confirmSave("aW5zY3JpcGNpb24=","Zm9ybUluc2NyaXBjaW9u","finalizarInscripcion()","") >Registrar</button>
+		<button type="reset" class="btn btn-default btn-sm" >Limpiar</button>
+	</div><br />
+    {include file="../structure/endWinget.tpl"}
+    
+    {include file="../structure/beginWinget.tpl"}DATOS ACADEMICOS
+	{include file="../structure/contentWinget.tpl"}
+	<div class="form-group">
+    <label class="col-lg-2 control-label">Carrera</label>
+    <div class="col-lg-3">
+        <select id="idCarrera" name="idCarrera" class="form-control">
+        	<option value="">-- SELECCIONE --</option>
+            <option value="1">Computación e Informatica</option>
+            <option value="2">Gastronomia</option>
+            <option value="3">Administración</option>
+        </select>
+    </div>    
+    </div>
+    <div class="col-lg-5 col-lg-offset-5">
+		<button type="button" class="btn btn-info btn-sm" onclick=javascript:confirmSave("aW5zY3JpcGNpb24=","Zm9ybUluc2NyaXBjaW9u","finalizarInscripcion()","") >Registrar</button>
+		<button type="reset" class="btn btn-default btn-sm" >Limpiar</button>
+	</div><br />
+    {include file="../structure/endWinget.tpl"}
+    
+    {include file="../structure/beginWinget.tpl"}DATOS PUBLICITARIOS
+	{include file="../structure/contentWinget.tpl"}
+	<div class="form-group">
+        <label class="col-lg-3 control-label">¿Cómo se informo de nuestra institución?</label>
+        <div class="col-lg-5">
+            <div class="radio">
+                <label>
+                    <input type="radio" name="marRespuesta" id="marRespuesta1" value="1" checked="checked" onchange="validateOtros()">Via Web
+                </label>
+             </div>
+             <div class="radio">
+                <label>
+                    <input type="radio" name="marRespuesta" id="marRespuesta2" value="2" onchange="validateOtros()">Por un Amigo
+                </label>
+             </div>
+             <div class="radio">
+                <label>
+                    <input type="radio" name="marRespuesta" id="marRespuesta3" value="3" onchange="validateOtros()">Via Publicidad Impresa
+                </label>
+             </div>
+             <div class="radio">
+                <label>
+                    <input type="radio" name="marRespuesta" id="marRespuesta4" value="4" onchange="validateOtros()">Via TV/Radio
+                </label>
+             </div>
+             <div class="radio">
+                <label>
+                    <input type="radio" name="marRespuesta" id="marRespuesta5" value="5" onchange="validateOtros()">En la Institución
+                </label>
+             </div>
+             <div class="radio">
+                <label>
+                    <input type="radio" name="marRespuesta" id="marRespuesta6" value="6" onchange="validateOtros()">Otros
+                </label>
+             </div>
+             <div class="col-lg-6">
+                <input id="insObservacion" name="insObservacion" type="text" class="form-control" placeholder="Observación" disabled="disabled" >
+            </div>
+        </div>
+    </div>
+    <div class="col-lg-5 col-lg-offset-5">
+		<button type="button" class="btn btn-info btn-sm" onclick=javascript:confirmSave("aW5zY3JpcGNpb24=","Zm9ybUluc2NyaXBjaW9u","finalizarInscripcion()","") >Registrar</button>
+		<button type="reset" class="btn btn-default btn-sm" >Limpiar</button>
+	</div><br />
+    {include file="../structure/endWinget.tpl"}
+    </form>
+<!-- -->
+{include file="../structure/endMatterContent.tpl"}
+{include file="../structure/endMainbarContent.tpl"}
+
+{include file="../structure/endContent.tpl"}
+
+{include file="../structure/footer.tpl"}
+<!-- -->
+{include file="../structure/bodyEnd.tpl"}
+{include file="../structure/HTMLEnd.tpl"}

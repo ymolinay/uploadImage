@@ -1,0 +1,43 @@
+{include file="../structure/HTMLBegin.tpl"}
+{include file="../structure/header.tpl"}
+{include file="../structure/bodyBegin.tpl"}
+<!-- -->
+{include file="../structure/topBanner.tpl"}
+<!-- -->
+{include file="../structure/headerContent.tpl"}
+
+{include file="../structure/beginContent.tpl"}
+
+{include file="../structure/navigationContent.tpl"}
+{include file="../structure/beginMainbarContent.tpl"}
+{include file="../structure/beginMatterContent.tpl"}
+<!-- -->
+    {include file="../structure/beginWinget.tpl"}CARRERAS
+    {include file="../structure/contentWinget.tpl"}
+        <form id="formCurso" name="formSearch" class="form-horizontal" role="form" >
+            <div class="form-group">
+                <label class="col-lg-2 control-label">Nombres</label>
+                <div class="col-lg-4">
+                    <input type="text" class="notVisible" id="inputIdCurso" name="inputIdCurso">
+                    <input type="text" class="form-control" id="inputNombre" name="inputNombre" placeholder="Descripcion" >
+                </div>
+            </div>
+            <div class="col-lg-8 col-lg-offset-4">
+                <button type="reset" class="btn btn-default btn-sm" >Limpiar</button>
+                <button type="button" class="btn btn-info btn-sm" onclick="confirmSave('Y3Vyc28=','Zm9ybUN1cnNv','gridCursos();')" >Guardar</button>
+                <button type="button" class="btn btn-info btn-sm" onclick="searchCurso()" >Buscar</button>
+            </div><br />
+        </form>
+    {include file="../structure/endWinget.tpl"}
+<!-- contenido -->
+	<div class="tableCursos widget"></div>
+<!-- -->
+{include file="../structure/endMatterContent.tpl"}
+{include file="../structure/endMainbarContent.tpl"}
+
+{include file="../structure/endContent.tpl"}
+
+{include file="../structure/footer.tpl"}
+<!-- -->
+{include file="../structure/bodyEnd.tpl"}
+{include file="../structure/HTMLEnd.tpl"}

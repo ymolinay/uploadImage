@@ -1,0 +1,210 @@
+{include file="../structure/HTMLBegin.tpl"}
+{include file="../structure/header.tpl"}
+{include file="../structure/bodyBegin.tpl"}
+<!-- -->
+{include file="../structure/topBanner.tpl"}
+<!-- -->
+{include file="../structure/headerContent.tpl"}
+
+{include file="../structure/beginContent.tpl"}
+
+{include file="../structure/navigationContent.tpl"}
+{include file="../structure/beginMainbarContent.tpl"}
+{include file="../structure/beginMatterContent.tpl"}
+<!-- contenido -->
+    {include file="../structure/beginWinget.tpl"}DATOS DEL ALUMNO
+    {include file="../structure/contentWinget.tpl"}
+        <form id="formPersonal" name="formPersonal" class="form-horizontal" role="form">
+            <div class="form-group">
+                <label class="col-lg-2 control-label">Nombres</label>
+                <div class="col-lg-5">
+                    <input id="inputName" name="inputName" type="text" class="form-control" placeholder="Nombres" onkeyup="completeUser();">
+                    <input id="idPersonal" name="idPersonal" type="text" class="notVisible">
+                    <input id="userType" name="userType" type="text" class="notVisible" value="YWx1bW5v">
+                </div>
+            </div>
+            <div class="form-group">
+                <label class="col-lg-2 control-label">Apellido Paterno</label>
+                <div class="col-lg-5">
+                    <input id="inputFName" name="inputFName" type="text" class="form-control" placeholder="Apellido Paterno" onkeyup="completeUser();">
+                </div>
+            </div>
+            <div class="form-group">
+                <label class="col-lg-2 control-label">Apellido Materno</label>
+                <div class="col-lg-5">
+                    <input id="inputMName" name="inputMName" type="text" class="form-control" placeholder="Apellido Materno" onkeyup="completeUser();">
+                </div>
+            </div>
+            <div class="form-group">
+                <label class="col-lg-2 control-label">DNI</label>
+                <div class="col-lg-5">
+                    <input id="inputDNI" name="inputDNI" type="text" class="form-control" placeholder="DNI" onkeyup="completePassword();">
+                </div>
+            </div>
+            <div class="form-group">
+                <label class="col-lg-2 control-label">Correo</label>
+                <div class="col-lg-5">
+                    <input id="inputEmail" name="inputEmail" type="text" class="form-control" placeholder="Correo">
+                </div>
+            </div>
+            <div class="form-group">
+                <label class="col-lg-2 control-label">Teléfono</label>
+                <div class="col-lg-5">
+                    <input id="inputTelefono" name="inputTelefono" type="text" class="form-control" placeholder="Teléfono">
+                </div>
+            </div>
+            <div class="form-group">
+                <label class="col-lg-2 control-label">Ubigeo</label>
+                <div class="col-lg-5">
+                    <select id="idUbigeo" name="idUbigeo">
+                        <option selected="selected" value="">Seleccionar Ubigeo</option>
+                    </select>
+                </div>
+            </div>
+            <div class="form-group">
+                <label class="col-lg-2 control-label">Dirección</label>
+                <div class="col-lg-5">
+                    <input id="inputDireccion" name="inputDireccion" type="text" class="form-control" placeholder="Av. Siempre Viva 742">
+                </div>
+            </div>
+            <div class="form-group">
+                <label class="col-lg-2 control-label">Sexo</label>
+                <div class="col-lg-5">
+                    <select id="inputSexo" name="inputSexo" class="form-control">
+                        <option selected="selected" value="">Seleccionar Sexo</option>
+                        <option value="M">Masculino</option>
+                        <option value="F">Femenino</option>
+                    </select>
+                </div>
+            </div>
+            <div class="form-group">
+                <label class="col-lg-2 control-label">Estado Civil</label>
+                <div class="col-lg-5">
+                    <select id="inputEstadoCivil" name="inputEstadoCivil" class="form-control">
+                        <option selected="selected" value="">Seleccionar Estado Civil</option>
+                        <option value="1">SOLTERO</option>
+                        <option value="2">CASADO</option>
+                        <option value="3">VIUDO</option>
+                        <option value="4">DIVORCIADO</option>
+                    </select>
+                </div>
+            </div>
+            <div class="form-group">
+                <label class="col-lg-2 control-label">Fec. Nacimiento</label>
+                <div class="col-lg-5">
+                    <input id="inputFNacimiento" name="inputFNacimiento" type="text" class="form-control" placeholder="Fecha Nacimiento">
+                </div>
+            </div>
+            <div class="form-group">
+                <label class="col-lg-2 control-label">Nacionalidad</label>
+                <div class="col-lg-5">
+                    <select id="inputNacionalidad" name="inputNacionalidad" class="form-control">
+                        <option selected="selected" value="">Seleccionar Nacionalidad</option>
+                        <option value="1">Peruano</option>
+                        <option value="2">Extranjero</option>
+                    </select>
+                </div>
+            </div>
+            <div class="form-group">
+                <label class="col-lg-2 control-label">Usuario</label>
+                <div class="col-lg-5">
+                    <input id="inputUsuario" name="inputUsuario" type="text" class="form-control" placeholder="Usuario">
+                    <input id="idUsuario" name="idUsuario" type="text" class="notVisible">
+                </div>
+            </div>
+            <div class="form-group">
+                <label class="col-lg-2 control-label">Contraseña</label>
+                <div class="col-lg-5">
+                    <input id="inputPassword" name="inputPassword" type="password" class="form-control" placeholder="Contraseña">
+                </div>
+            </div>
+            <div class="form-group">
+                <div class="col-lg-offset-2 col-lg-6">
+                    <button type="button" class="btn btn-sm btn-primary" onclick="confirmSave('cGVyc29uYWw=', 'Zm9ybVBlcnNvbmFs', '', '')">Registrar</button>
+                    <button type="button" class="btn btn-sm btn-default" onclick="clearForm('Zm9ybVBlcnNvbmFs');">Limpiar</button>
+                    <!--<button type="button" class="btn btn-sm btn-success">Success</button>
+                    <button type="button" class="btn btn-sm btn-info">Info</button>
+                    <button type="button" class="btn btn-sm btn-warning">Warning</button>
+                    <button type="button" class="btn btn-sm btn-danger">Danger</button>-->
+                </div>
+            </div>
+        </form>
+    {include file="../structure/endWinget.tpl"}
+    
+    
+    {include file="../structure/beginWinget.tpl"}APODERADO
+    {include file="../structure/contentWinget.tpl"}
+        <form id="formPersonal2" name="formPersonal2" class="form-horizontal" role="form">
+            <div class="form-group">
+                <label class="col-lg-2 control-label">Nombres</label>
+                <div class="col-lg-5">
+                    <input id="inputName" name="inputName" type="text" class="form-control" placeholder="Nombres" onkeyup="completeUser();">
+                    <input id="idPersonal" name="idPersonal" type="text" class="notVisible">
+                    <input id="userType" name="userType" type="text" class="notVisible" value="YWx1bW5v">
+                </div>
+            </div>
+            <div class="form-group">
+                <label class="col-lg-2 control-label">Apellido Paterno</label>
+                <div class="col-lg-5">
+                    <input id="inputFName" name="inputFName" type="text" class="form-control" placeholder="Apellido Paterno" onkeyup="completeUser();">
+                </div>
+            </div>
+            <div class="form-group">
+                <label class="col-lg-2 control-label">Apellido Materno</label>
+                <div class="col-lg-5">
+                    <input id="inputMName" name="inputMName" type="text" class="form-control" placeholder="Apellido Materno" onkeyup="completeUser();">
+                </div>
+            </div>
+            <div class="form-group">
+                <label class="col-lg-2 control-label">DNI</label>
+                <div class="col-lg-5">
+                    <input id="inputDNI" name="inputDNI" type="text" class="form-control" placeholder="DNI" onkeyup="completePassword();">
+                </div>
+            </div>
+        </form>
+    {include file="../structure/endWinget.tpl"}
+    
+    {include file="../structure/beginWinget.tpl"}FAMILIARES
+    {include file="../structure/contentWinget.tpl"}
+        <form id="formPersonal3" name="formPersonal3" class="form-horizontal" role="form">
+            <div class="form-group">
+                <label class="col-lg-2 control-label">Nombres</label>
+                <div class="col-lg-5">
+                    <input id="inputName" name="inputName" type="text" class="form-control" placeholder="Nombres" onkeyup="completeUser();">
+                    <input id="idPersonal" name="idPersonal" type="text" class="notVisible">
+                    <input id="userType" name="userType" type="text" class="notVisible" value="YWx1bW5v">
+                </div>
+            </div>
+            <div class="form-group">
+                <label class="col-lg-2 control-label">Apellido Paterno</label>
+                <div class="col-lg-5">
+                    <input id="inputFName" name="inputFName" type="text" class="form-control" placeholder="Apellido Paterno" onkeyup="completeUser();">
+                </div>
+            </div>
+            <div class="form-group">
+                <label class="col-lg-2 control-label">Apellido Materno</label>
+                <div class="col-lg-5">
+                    <input id="inputMName" name="inputMName" type="text" class="form-control" placeholder="Apellido Materno" onkeyup="completeUser();">
+                </div>
+            </div>
+            <div class="form-group">
+                <label class="col-lg-2 control-label">DNI</label>
+                <div class="col-lg-5">
+                    <input id="inputDNI" name="inputDNI" type="text" class="form-control" placeholder="DNI" onkeyup="completePassword();">
+                </div>
+            </div>
+        </form>
+    {include file="../structure/endWinget.tpl"}
+    
+    <div class="tableStudent"></div>
+
+<!-- -->
+{include file="../structure/endMatterContent.tpl"}
+{include file="../structure/endMainbarContent.tpl"}
+
+{include file="../structure/endContent.tpl"}
+
+{include file="../structure/footer.tpl"}
+<!-- -->
+{include file="../structure/bodyEnd.tpl"}
+{include file="../structure/HTMLEnd.tpl"}

@@ -1,0 +1,486 @@
+{include file="../structure/HTMLBegin.tpl"}
+{include file="../structure/header.tpl"}
+{include file="../structure/bodyBegin.tpl"}
+<!-- -->
+{include file="../structure/topBanner.tpl"}
+<!-- -->
+{include file="../structure/headerContent.tpl"}
+
+{include file="../structure/beginContent.tpl"}
+
+{include file="../structure/navigationContent.tpl"}
+{include file="../structure/beginMainbarContent.tpl"}
+{include file="../structure/beginMatterContent.tpl"}
+<!-- -->
+    {include file="../structure/beginWinget.tpl"}INFORMACIÓN ACADEMICA
+    {include file="../structure/contentWinget.tpl"}
+    <style>
+	.thorario{
+		border: solid 1px #666666;
+	}
+	.thorario th{
+		border: solid 1px #666666;
+		padding: 5px 20px 5px 20px;
+		background-color:#fea81f;
+		text-align:center;
+		color:#FFF;
+	}
+	.thorario td{
+		border: solid 1px #666666;
+		padding: 5px 20px 5px 20px;
+		text-align:center;
+	}
+	</style>
+	 <form id="formSearch" name="formSearch" class="form-horizontal" role="form" >
+                    <div class="form-group">
+                            <label class="col-lg-1 control-label">Carreras:</label>
+                            <div class="col-lg-3">
+                                   <select id="carrera" name="carrera" class="form-control" >
+                        <option value="">-- Carrera --</option>
+                        <option value="Computación e Informatica">Computación e Informatica</option>
+                        <option value="Administración de Empresa">Administración de Empresa</option>
+                        <option value="Contabilidad">Contabilidad</option>
+                        <option value="Diseño Grafíco">Diseño Grafíco</option>
+                        <option value="Gastronomia">Gastronomia</option>
+                        <option value="Ensamblaje de PC'S">Ensamblaje de PC'S</option>
+                    </select>
+                            </div>
+                            <label class="col-lg-1 control-label">Secciones:</label>
+                            <div class="col-lg-4">
+                                    <select id="seccion" name="seccion" class="form-control">
+                        				<option value="">-- Sección --</option>
+                        			</select>
+                            </div>
+                    </div>
+    </form>
+    {include file="../structure/endWinget.tpl"}
+    {include file="../structure/beginWinget.tpl"}PROGRAMACIÓN
+    {include file="../structure/contentWinget.tpl"}
+ <form id="formSearch" name="formSearch" class="form-horizontal" role="form" >
+                    <div class="form-group">
+                            <label class="col-lg-1 control-label">Docentes:</label>
+                            <div class="col-lg-3">
+                                   <select id="docente" name="docente" class="form-control" disabled="disabled" >
+                        <option value="">-- Docente --</option>
+                        <option value="Veigas rojas, Felix">Veigas rojas, Felix</option>
+                        <option value="Castejon Rojas, Adela">Castejon Rojas, Adela</option>
+                        <option value="Reyes Martinez, Erick">Reyes Martinez, Erick</option>
+                    </select>
+                            </div>
+                            <label class="col-lg-1 control-label">Días:</label>
+                            <div class="col-lg-2">
+                                    <select id="dia" name="dia" class="form-control" disabled="disabled">
+                        				<option value="">-- Dia --</option>
+                                        <option value="Lunes">Lunes</option>
+                                         <option value="Martes">Martes</option>
+                                          <option value="Miercoles">Miercoles</option>
+                                           <option value="Jueves">Jueves</option>
+                                            <option value="Viernes">Viernes</option>
+                                             <option value="Sabado">Sabado</option>
+                                              <option value="Domingo">Domingo</option>
+                        			</select>
+                            </div>
+                            <label class="col-lg-1 control-label">Hora:</label>
+                            <div class="col-lg-3">
+                                    <select id="hora" name="hora" class="form-control" disabled="disabled">
+                        				<option value="">-- Hora --</option>
+                        			</select>
+                            </div>
+                    </div>
+                    <div class="form-group">
+                    <label class="col-lg-1 control-label">Cursos:</label>
+                            <div class="col-lg-3">
+                    	<select id="curso" name="curso" class="form-control" disabled="disabled">
+                        				<option value="">-- Curso --</option>
+                                        <option value="Aplicativos de Informática para los negocios">Aplicativos de Informática para los negocios</option>
+<option value="Fundamentos de Economía para los Negocios">Fundamentos de Economía para los Negocios</option>
+<option value="Inglés para Negocios I">Inglés para Negocios I</option>
+<option value="Lenguaje y Técnicas de Comunicación">Lenguaje y Técnicas de Comunicación</option>
+<option value="Matemáticas I">Matemáticas I</option>
+<option value="Fundamentos de Administración de Empresas">Fundamentos de Administración de Empresas</option>
+<option value="Metodología y Técnicas de Estudio">Metodología y Técnicas de Estudio</option>
+<option value="Documentación Mercantil">Documentación Mercantil</option>
+<option value="Fundamentos de Contabilidad de Negocios">Fundamentos de Contabilidad de Negocios</option>
+<option value="Aplicativos de Informática para los negocios">Aplicativos de Informática para los negocios</option>
+<option value="Inglés para Negocios II">Inglés para Negocios II</option>
+<option value="Redacción Comercial y Administrativa">Redacción Comercial y Administrativa</option>
+<option value="Liderazgo y Trabajo en Equipo en la Gestión A">Liderazgo y Trabajo en Equipo en la Gestión A</option>
+<option value="Matemáticas II">Matemáticas II</option>
+<option value="Contabilidad General de Negocios">Contabilidad General de Negocios</option>
+<option value="Economía General de Negocios">Economía General de Negocios</option>
+<option value="Administración Estratégica">Administración Estratégica</option>
+<option value="Lenguaje de Programación de Sistemas">Lenguaje de Programación de Sistemas</option>
+<option value="Macroeconomía">Macroeconomía</option>
+<option value="Aplicativos de Informática para los negocios">Aplicativos de Informática para los negocios</option>
+<option value="Costos y Presupuestos">Costos y Presupuestos</option>
+<option value="Legislación Laboral">Legislación Laboral</option>
+<option value="Comercio Internacional">Comercio Internacional</option>
+<option value="Planeamiento Estratégico">Planeamiento Estratégico</option>
+<option value="Inglés para Negocios III">Inglés para Negocios III</option>
+<option value="Marketing Estratégico I">Marketing Estratégico I</option>
+<option value="Administración de Recursos Humanos I">Administración de Recursos Humanos I</option>
+<option value="Organización y Métodos">Organización y Métodos</option>
+<option value="Marketing Estratégico II">Marketing Estratégico II</option>
+<option value="Administración de Recursos Humanos II">Administración de Recursos Humanos II</option>
+<option value="Estadística Aplicada para la Administración d">Estadística Aplicada para la Administración d</option>
+<option value="Racionalización Administrativa">Racionalización Administrativa</option>
+<option value="Relaciones Públicas">Relaciones Públicas</option>
+<option value="Análisis e Interpretación de los Estados Fina">Análisis e Interpretación de los Estados Fina</option>
+<option value="Matemática Financiera I">Matemática Financiera I</option>
+<option value="Logística I">Logística I</option>
+<option value="Estrategia de Atención al Cliente">Estrategia de Atención al Cliente</option>
+<option value="Estadística Aplicada para la Administración d">Estadística Aplicada para la Administración d</option>
+<option value="Logística II">Logística II</option>
+<option value="Técnica Presupuestal">Técnica Presupuestal</option>
+<option value="Administración Financiera">Administración Financiera</option>
+<option value="Formulación y Evaluación de Proyectos I">Formulación y Evaluación de Proyectos I</option>
+<option value="Seminario I (Administración de Cooperativas)">Seminario I (Administración de Cooperativas)</option>
+<option value="Gestión de Importación y Exportación">Gestión de Importación y Exportación</option>
+<option value="Matemática Financiera II">Matemática Financiera II</option>
+<option value="Análisis de la Economía Nacional">Análisis de la Economía Nacional</option>
+<option value="Formulación y Evaluación de Proyectos I">Formulación y Evaluación de Proyectos I</option>
+<option value="Seminario II (Organización y Gestión de Peque">Seminario II (Organización y Gestión de Peque</option>
+<option value="Administración Pública">Administración Pública</option>
+<option value="Macroeconomía de Negocios Administrativos">Macroeconomía de Negocios Administrativos</option>
+<option value="Redacción Administrativa">Redacción Administrativa</option>
+<option value="Auditoría Administrativa y Contable">Auditoría Administrativa y Contable</option>
+<option value="Gestión Empresarial">Gestión Empresarial</option>
+<option value="Gerencia de Empresas">Gerencia de Empresas</option>
+<option value="Reingeiería de los Negocio">Reingeiería de los Negocio</option>
+<option value="Clima Organizacional para una Gestión de Cali">Clima Organizacional para una Gestión de Cali</option>
+<option value="Computación I">Computación I</option>
+<option value="Fundamentos de Economía">Fundamentos de Economía</option>
+<option value="Inglés I">Inglés I</option>
+<option value="Lenguaje y Técnicas de Comunicación">Lenguaje y Técnicas de Comunicación</option>
+<option value="Matemáticas I">Matemáticas I</option>
+<option value="Fundamentos de Administración">Fundamentos de Administración</option>
+<option value="Metodología y Técnicas de Estudio">Metodología y Técnicas de Estudio</option>
+<option value="Documentación Comercial y Contable">Documentación Comercial y Contable</option>
+<option value="Fundamentos de Contabilidad">Fundamentos de Contabilidad</option>
+<option value="Computación II">Computación II</option>
+<option value="Inglés II">Inglés II</option>
+<option value="Legislación Laboral I">Legislación Laboral I</option>
+<option value="Liderzgo y Trabajo en Equipo en la Gestión">Liderzgo y Trabajo en Equipo en la Gestión</option>
+<option value="Matemáticas II">Matemáticas II</option>
+<option value="Contabilidad I y II">Contabilidad I y II</option>
+<option value="Economía General">Economía General</option>
+<option value="Análisis y Aplicación del Plan Contable">Análisis y Aplicación del Plan Contable</option>
+<option value="Legislación Tributaria I">Legislación Tributaria I</option>
+<option value="Macroeconomía">Macroeconomía</option>
+<option value="Computación III">Computación III</option>
+<option value="Costos y Presupuestos">Costos y Presupuestos</option>
+<option value="Legislación Laboral II">Legislación Laboral II</option>
+<option value="Contabilidad III">Contabilidad III</option>
+<option value="Derecho Laboral">Derecho Laboral</option>
+<option value="Inglés III">Inglés III</option>
+<option value="Excel Contable y Financiero I">Excel Contable y Financiero I</option>
+<option value="Recursos Humanos I">Recursos Humanos I</option>
+<option value="Contabilidad de Costos I">Contabilidad de Costos I</option>
+<option value="Contabilidad de Sociedades">Contabilidad de Sociedades</option>
+<option value="Técnicas Presupuestales">Técnicas Presupuestales</option>
+<option value="Estadística Aplicada I">Estadística Aplicada I</option>
+<option value="Legislación Tributaria II">Legislación Tributaria II</option>
+<option value="Contabilidad de Costos II">Contabilidad de Costos II</option>
+<option value="Análisis e Interpretación de los Estados Fina">Análisis e Interpretación de los Estados Fina</option>
+<option value="Matemática Financiera I">Matemática Financiera I</option>
+<option value="Logística I">Logística I</option>
+<option value="Contabilidad Gubernamental">Contabilidad Gubernamental</option>
+<option value="Estadística Aplicada II">Estadística Aplicada II</option>
+<option value="Logística II">Logística II</option>
+<option value="Excel Contable y Financiero II">Excel Contable y Financiero II</option>
+<option value="Contabilidad Aplicada PDT">Contabilidad Aplicada PDT</option>
+<option value="Administración de los Presupuestos">Administración de los Presupuestos</option>
+<option value="Contabilidad Bancaría">Contabilidad Bancaría</option>
+<option value="Finanzas I">Finanzas I</option>
+<option value="Matemática Financiera II">Matemática Financiera II</option>
+<option value="Auditoría Financiera I">Auditoría Financiera I</option>
+<option value="Formulación y Evaluación de Proyectos">Formulación y Evaluación de Proyectos</option>
+<option value="Comercio Internacional">Comercio Internacional</option>
+<option value="Finanzas II">Finanzas II</option>
+<option value="Macroeconomía">Macroeconomía</option>
+<option value="Deontología Profesional">Deontología Profesional</option>
+<option value="Auditoría Financiera II">Auditoría Financiera II</option>
+<option value="Gestión Empresarial">Gestión Empresarial</option>
+<option value="Estadística Aplicada III">Estadística Aplicada III</option>
+<option value="Reingeniería de Negocios">Reingeniería de Negocios</option>
+<option value="Clima Organizacional para una Gestión de Cali">Clima Organizacional para una Gestión de Cali</option>
+<option value="Aplicativos de Computación I (Windows, PowerP">Aplicativos de Computación I (Windows, PowerP</option>
+<option value="Fundamentos de Economía para los Negocios">Fundamentos de Economía para los Negocios</option>
+<option value="Inglés Técnico Aplicado a la Informática I">Inglés Técnico Aplicado a la Informática I</option>
+<option value="Lenguaje y Técncias de Comunicación">Lenguaje y Técncias de Comunicación</option>
+<option value="Matemáticas I">Matemáticas I</option>
+<option value="Fundamentos de Administración de Empresas">Fundamentos de Administración de Empresas</option>
+<option value="Metodología y Técnicas de Estudio">Metodología y Técnicas de Estudio</option>
+<option value="Fundamentos de Progamación de Sistemas">Fundamentos de Progamación de Sistemas</option>
+<option value="Fundamentos de Contabilidad de Negocios">Fundamentos de Contabilidad de Negocios</option>
+<option value="Aplicativos de Computación II (Experto en Exc">Aplicativos de Computación II (Experto en Exc</option>
+<option value="Inglés Técnico Aplicado a la Informática II">Inglés Técnico Aplicado a la Informática II</option>
+<option value="Redacción Comercial y Administrativa">Redacción Comercial y Administrativa</option>
+<option value="Liderazgo y Trabajo en Equipo">Liderazgo y Trabajo en Equipo</option>
+<option value="Matemáticas II">Matemáticas II</option>
+<option value="Contabilidad General">Contabilidad General</option>
+<option value="Modelamiento de la Información">Modelamiento de la Información</option>
+<option value="Economía General">Economía General</option>
+<option value="Lenguaje de Programación de Sistemas II (Visu">Lenguaje de Programación de Sistemas II (Visu</option>
+<option value="Análisis y Diseño de Sistemas Orientado a Obj">Análisis y Diseño de Sistemas Orientado a Obj</option>
+<option value="Aplicativos de Computación III (Access, MySQ">Aplicativos de Computación III (Access, MySQ</option>
+<option value="Costos y Presupuestos">Costos y Presupuestos</option>
+<option value="Diseño de Sistemas Orientado a Objetos UML">Diseño de Sistemas Orientado a Objetos UML</option>
+<option value="Ingeniería de Sistemas Orientado a Objetos I">Ingeniería de Sistemas Orientado a Objetos I</option>
+<option value="Imglés Técnico aplicado a la Informática III">Imglés Técnico aplicado a la Informática III</option>
+<option value="Macroeconomía">Macroeconomía</option>
+<option value="marketing de Ventas">marketing de Ventas</option>
+<option value="Tecnología y Ensamblaje del Computador">Tecnología y Ensamblaje del Computador</option>
+<option value="Aplicativos de Computación IV (Herramientas W">Aplicativos de Computación IV (Herramientas W</option>
+<option value="Diseño de Sistemas de Redes LAN">Diseño de Sistemas de Redes LAN</option>
+<option value="Estadística Aplicada I">Estadística Aplicada I</option>
+<option value="Matemática Financiera">Matemática Financiera</option>
+<option value="Herramientas Case UML">Herramientas Case UML</option>
+<option value="Lenguaje de Sistema de Programación IV (Java)">Lenguaje de Sistema de Programación IV (Java)</option>
+<option value="Sistemas de Redes (Linux Adminisración)">Sistemas de Redes (Linux Adminisración)</option>
+<option value="Taller de Base de Datos I (SQL Server)">Taller de Base de Datos I (SQL Server)</option>
+<option value="Análisis de los Estados Financieros">Análisis de los Estados Financieros</option>
+<option value="Administración de Proyectos Informáticos">Administración de Proyectos Informáticos</option>
+<option value="Aplicativos de Computación V (ASP.NET)">Aplicativos de Computación V (ASP.NET)</option>
+<option value="Diseño de Sistemas de Redes WAN">Diseño de Sistemas de Redes WAN</option>
+<option value="Gestión de Proyectos Informáticos">Gestión de Proyectos Informáticos</option>
+<option value="Sistemas Computacionales I">Sistemas Computacionales I</option>
+<option value="Sistemas Operativos">Sistemas Operativos</option>
+<option value="Sistemas de Redes (Linux Expert)">Sistemas de Redes (Linux Expert)</option>
+<option value="Lenguaje de Programación de Sistemas V (Power">Lenguaje de Programación de Sistemas V (Power</option>
+<option value="Taller de Base de Datos II (Oracle)">Taller de Base de Datos II (Oracle)</option>
+<option value="Estadística Aplicada II">Estadística Aplicada II</option>
+<option value="Auditoría Informática de Sistemas">Auditoría Informática de Sistemas</option>
+<option value="Deontología Profesional">Deontología Profesional</option>
+<option value="Ingeniería de Sistemas Orientados a Objetos I">Ingeniería de Sistemas Orientados a Objetos I</option>
+<option value="Integración de Sistemas de Redes II">Integración de Sistemas de Redes II</option>
+<option value="Seguridad de Sistemas Informáticos">Seguridad de Sistemas Informáticos</option>
+<option value="Sistemas Computacionales II">Sistemas Computacionales II</option>
+<option value="Sistemas de Redes II (Windows Server)">Sistemas de Redes II (Windows Server)</option>
+<option value="Lenguaje de Programación de Sistemas VI (Powe">Lenguaje de Programación de Sistemas VI (Powe</option>
+<option value="Aplicativos de Computación VI (ASP.NET II)">Aplicativos de Computación VI (ASP.NET II)</option>
+<option value="Talle de Sistemas WEB (Php & MySQL)">Talle de Sistemas WEB (Php & MySQL)</option>
+
+                        			</select>
+                                   </div>
+                            <label class="col-lg-1 control-label">Aula/LAB:</label>
+                            <div class="col-lg-3">
+                        				<input type="text" id="aula" name="aula" placeholder="Aula" disabled="disabled" class="form-control" />
+                                        
+                            </div>
+                    </div>
+                    <div class="col-lg-4 col-lg-offset-10">
+                            <button id="generar" type="button" class="btn btn-info btn-sm" >Añadir</button>
+                            <button type="reset" class="btn btn-default btn-sm" >Limpiar</button>
+                    </div><br /><br />
+    </form>
+    {include file="../structure/endWinget.tpl"}
+<!-- contenido -->
+ 	{include file="../structure/beginWinget.tpl"}CONSOLIDADO
+    {include file="../structure/contentWinget.tpl"}
+<div id="horario">Horario no generado.</div>
+<div id="mhorario" style="visibility:hidden; display:none">
+<table class="thorario">
+<thead>
+<tr >
+	<th>HORA</th>
+		<th>LUNES</th>
+		<th>MARTES</th>
+		<th>MIERCOLES</th>
+		<th>JUEVES</th>
+		<th>VIERNES</th>
+		<th>SABADO</th>
+		<th>DOMINGO</th>
+	</tr>
+	</thead>
+    <tbody>
+    	<tr>
+        	<td>08:00:00 - 08:50:00</td>
+            <td><div id="Lunes1"></div></td>
+            <td ><div id="Martes1"></div></td>
+            <td ><div id="Miercoles1"></div></td>
+            <td ><div id="Jueves1"></div></td>
+            <td ><div id="Viernes1"></div></td>
+            <td ><div id="Sabado1"></div></td>
+            <td><div  id="Domingo1"></div></td>
+        </tr>
+        <tr>
+        	<td>08:50:00 - 09:40:00</td>
+            <td id="Lunes2"></td>
+            <td id="Martes2"></td>
+            <td id="Miercoles2"></td>
+            <td id="Jueves2"></td>
+            <td id="Viernes2"></td>
+            <td id="Sabado2"></td>
+            <td id="Domingo2"></td>
+        </tr>
+        <tr>
+        	<td>09:40:00 - 10:10:00</td>
+            <td colspan="8" style="background-color:#FFC; text-align:center">BREAK</td>
+        </tr>
+        <tr>
+			<td>10:10:00 - 11:00:00</td>
+            <td id="Lunes4"></td>
+            <td id="Martes4"></td>
+            <td id="Miercoles4"></td>
+            <td id="Jueves4"></td>
+            <td id="Viernes4"></td>
+            <td id="Sabado4"></td>
+            <td id="Domingo4"></td>
+        </tr>
+        <tr>
+			<td>11:00:00 - 11:50:00</td>
+            <td id="Lunes5"></td>
+            <td id="Martes5"></td>
+            <td id="Miercoles5"></td>
+            <td id="Jueves5"></td>
+            <td id="Viernes5"></td>
+            <td id="Sabado5"></td>
+            <td id="Domingo5"></td>
+        </tr>
+    </tbody>
+	</table>
+</div>
+<div id="thorario" style="visibility:hidden; display:none">
+<table class="thorario">
+<thead>
+<tr >
+	<th>HORA</th>
+		<th>LUNES</th>
+		<th>MARTES</th>
+		<th>MIERCOLES</th>
+		<th>JUEVES</th>
+		<th>VIERNES</th>
+		<th>SABADO</th>
+		<th>DOMINGO</th>
+	</tr>
+	</thead>
+    <tbody>
+    	<tr>
+        	<td>02:00:00 - 02:50:00</td>
+            <td><div id="Lunes6"></div></td>
+            <td ><div id="Martes6"></div></td>
+            <td ><div id="Miercoles6"></div></td>
+            <td ><div id="Jueves6"></div></td>
+            <td ><div id="Viernes6"></div></td>
+            <td ><div id="Sabado6"></div></td>
+            <td><div  id="Domingo6"></div></td>
+        </tr>
+        <tr>
+        	<td>02:50:00 - 03:40:00</td>
+            <td id="Lunes7"></td>
+            <td id="Martes7"></td>
+            <td id="Miercoles7"></td>
+            <td id="Jueves7"></td>
+            <td id="Viernes7"></td>
+            <td id="Sabado7"></td>
+            <td id="Domingo7"></td>
+        </tr>
+        <tr>
+        	<td>03:40:00 - 04:10:00</td>
+            <td colspan="8" style="background-color:#FFC; text-align:center">BREAK</td>
+        </tr>
+        <tr>
+			<td>04:10:00 - 05:00:00</td>
+            <td id="Lunes9"></td>
+            <td id="Martes9"></td>
+            <td id="Miercoles9"></td>
+            <td id="Jueves9"></td>
+            <td id="Viernes9"></td>
+            <td id="Sabado9"></td>
+            <td id="Domingo9"></td>
+        </tr>
+        <tr>
+			<td>05:00:00 - 05:50:00</td>
+            <td id="Lunes10"></td>
+            <td id="Martes10"></td>
+            <td id="Miercoles10"></td>
+            <td id="Jueves10"></td>
+            <td id="Viernes10"></td>
+            <td id="Sabado10"></td>
+            <td id="Domingo10"></td>
+        </tr>
+    </tbody>
+	</table>
+</div>
+<div id="nhorario" style="visibility:hidden; display:none">
+<table class="thorario">
+<thead>
+<tr >
+	<th>HORA</th>
+		<th>LUNES</th>
+		<th>MARTES</th>
+		<th>MIERCOLES</th>
+		<th>JUEVES</th>
+		<th>VIERNES</th>
+		<th>SABADO</th>
+		<th>DOMINGO</th>
+	</tr>
+	</thead>
+    <tbody>
+    	<tr>
+        	<td>06:00:00 - 06:50:00</td>
+            <td><div id="Lunes11"></div></td>
+            <td ><div id="Martes11"></div></td>
+            <td ><div id="Miercoles11"></div></td>
+            <td ><div id="Jueves11"></div></td>
+            <td ><div id="Viernes11"></div></td>
+            <td ><div id="Sabado11"></div></td>
+            <td><div  id="Domingo11"></div></td>
+        </tr>
+        <tr>
+        	<td>06:50:00 - 07:40:00</td>
+            <td id="Lunes12"></td>
+            <td id="Martes12"></td>
+            <td id="Miercoles12"></td>
+            <td id="Jueves12"></td>
+            <td id="Viernes12"></td>
+            <td id="Sabado12"></td>
+            <td id="Domingo12"></td>
+        </tr>
+        <tr>
+        	<td>07:40:00 - 08:10:00</td>
+            <td colspan="8" style="background-color:#FFC; text-align:center">BREAK</td>
+        </tr>
+        <tr>
+			<td>08:10:00 - 09:00:00</td>
+            <td id="Lunes14"></td>
+            <td id="Martes14"></td>
+            <td id="Miercoles14"></td>
+            <td id="Jueves14"></td>
+            <td id="Viernes14"></td>
+            <td id="Sabado14"></td>
+            <td id="Domingo14"></td>
+        </tr>
+        <tr>
+			<td>09:00:00 - 09:50:00</td>
+            <td id="Lunes15"></td>
+            <td id="Martes15"></td>
+            <td id="Miercoles15"></td>
+            <td id="Jueves15"></td>
+            <td id="Viernes15"></td>
+            <td id="Sabado15"></td>
+            <td id="Domingo15"></td>
+        </tr>
+    </tbody>
+	</table>
+</div>
+    {include file="../structure/endWinget.tpl"}
+	
+    <!--
+    {include file="../structure/beginWinget.tpl"}
+    Titulo
+    {include file="../structure/contentWinget.tpl"}
+    Contenido
+    {include file="../structure/endWinget.tpl"}
+    -->
+<!-- -->
+{include file="../structure/endMatterContent.tpl"}
+{include file="../structure/endMainbarContent.tpl"}
+
+{include file="../structure/endContent.tpl"}
+
+{include file="../structure/footer.tpl"}
+<!-- -->
+{include file="../structure/bodyEnd.tpl"}
+{include file="../structure/HTMLEnd.tpl"}

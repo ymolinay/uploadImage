@@ -1,0 +1,146 @@
+{include file="../structure/HTMLBegin.tpl"}
+{include file="../structure/header.tpl"}
+{include file="../structure/bodyBegin.tpl"}
+<!-- -->
+{include file="../structure/topBanner.tpl"}
+<!-- -->
+{include file="../structure/headerContent.tpl"}
+
+{include file="../structure/beginContent.tpl"}
+
+{include file="../structure/navigationContent.tpl"}
+{include file="../structure/beginMainbarContent.tpl"}
+{include file="../structure/beginMatterContent.tpl"}
+<!-- contenido -->
+    <div id="filterStudentProfession">
+    {include file="../structure/beginWinget.tpl"}BUSCAR ESTUDIANTE
+    {include file="../structure/contentWinget.tpl"}
+        <form id="formAttachFile" name="formAttachFile" class="form-horizontal" role="form">
+            <div class="form-group">
+                <label class="col-lg-2 control-label">Carrera</label>
+                <div class="col-lg-5">
+                    <select id="idCarrera" name="idCarrera" class="form-control">
+                        <option selected="selected" value="">Seleccionar Carrera</option>
+                    </select>
+                </div>
+            </div>
+            <div class="form-group">
+                <label class="col-lg-2 control-label">Estudiante</label>
+                <div class="col-lg-5">
+                    <input id="idUsuarioCarrera" name="idUsuarioCarrera" type="text" class="notVisible">
+                    <select id="idUsuario" name="idUsuario" class="form-control">
+                        <option selected="selected" value="">Seleccionar Estudiante - DNI</option>
+                    </select>
+                </div>
+            </div>
+            <div class="form-group">
+                <label class="col-lg-2 control-label">Nombres</label>
+                <div class="col-lg-5">
+                    <input id="inputNombres" name="inputNombres" type="text" class="form-control" placeholder="Nombres">
+                </div>
+            </div>
+            <div class="form-group">
+                <label class="col-lg-2 control-label">A. Paterno</label>
+                <div class="col-lg-5">
+                    <input id="inputAPaterno" name="inputAPaterno" type="text" class="form-control" placeholder="Apellido Paterno">
+                </div>
+            </div>
+            <div class="form-group">
+                <label class="col-lg-2 control-label">A. Materno</label>
+                <div class="col-lg-5">
+                    <input id="inputAMaterno" name="inputAMaterno" type="text" class="form-control" placeholder="Apellido Materno">
+                </div>
+            </div>
+            <div class="form-group">
+                <label class="col-lg-2 control-label">DNI</label>
+                <div class="col-lg-5">
+                    <input id="inputDNI" name="inputDNI" type="text" class="form-control" placeholder="DNI" maxlength="8">
+                </div>
+            </div>
+            <div class="form-group">
+                <div class="col-lg-4 col-lg-offset-5">
+                    <input id="repJsonData" name="repJsonData" type="text" class="notVisible">
+                    <button type="button" class="btn btn-sm btn-info" onclick="gridStudentProfession()">Buscar</button>
+                    <button type="button" class="btn btn-sm btn-default" onclick="clearForm('Zm9ybUF0dGFjaEZpbGU=');">Limpiar</button>
+                </div>
+            </div>
+        </form>
+    {include file="../structure/endWinget.tpl"}
+    </div>
+
+    <div class="tableStudentProfession widget"></div>
+    
+    <div id="filesProfession">
+    {include file="../structure/beginWinget.tpl"}ADJUNTAR ARCHIVOS
+    {include file="../structure/contentWinget.tpl"}
+        <form id="formAttachFilePerson" name="formAttachFilePerson" class="form-horizontal" role="form">
+            <div class="form-group">
+                <label class="col-lg-2 control-label">Estudiante</label>
+                <div class="col-lg-5">
+                    <input id="idUsuarioCarreraFile" name="idUsuarioCarreraFile" type="text" class="notVisible">
+                    <input id="inputNombresFile" name="inputNombresFile" type="text" class="form-control" placeholder="Nombres" readonly="readonly">
+                </div>
+            </div>
+            <div class="form-group">
+                <label class="col-lg-2 control-label">Carrera</label>
+                <div class="col-lg-5">
+                    <input id="inputCarreraFile" name="inputCarreraFile" type="text" class="form-control" placeholder="Carrera" readonly="readonly">
+                </div>
+            </div>
+            <div class="form-group">
+                <label class="col-lg-2 control-label">DNI</label>
+                <div class="col-lg-5">
+                    <input id="inputDNIFile" name="inputDNIFile" type="text" class="form-control" placeholder="DNI" maxlength="8" readonly="readonly">
+                </div>
+            </div>
+            <div class="form-group">
+                <label class="col-lg-2 control-label">Archivo</label>
+                <div id="divFileUpload" class="col-lg-5">
+                    <input id="uploadFile" placeholder="Seleccionar Archivo" class="form-control" disabled="disabled" style="width: 70%; float: left;" />
+                    <div id="inputFileUpload" class="fileUpload btn btn-primary" style="width:20%;float:left;">
+                        <span>Adjuntar</span>
+                        <input id="fileuploadPersonal" type="file" name="files[]" data-url="../files/people/" class="upload">
+                    </div>
+                    <div id="inputClearFileUpload" class="btn btn-primary disabled" style="width:10%;float:left;" onclick="resultUpload(true);">
+                        <span class="fa fa-undo"></span>
+                    </div>
+                </div>
+            </div>
+            <div class="form-group">
+                <label class="col-lg-2 control-label">Tipo</label>
+                <div class="col-lg-5">
+                    <select id="inputTypeFile" name="inputTypeFile" class="form-control">
+                        <option value="">Seleccionar</option>
+                        <option value="Foto">Foto</option>
+                        <option value="CopiaDNI">Copia de DNI</option>
+                        <option value="PartidaNacimiento">Partida de Nacimiento</option>
+                        <option value="CertificadoEstudios">Certficado de Estudios</option>
+                    </select>
+                </div>
+            </div>
+            <div class="form-group">
+                <div class="col-lg-4 col-lg-offset-4">
+                    <input id="repJsonData" name="repJsonData" type="text" class="notVisible">
+                    <div class="clearFileInput">
+                        <button id="saveFilePersonal" name="saveFilePersonal" type="button" class="btn btn-sm btn-info" onclick="saveFileStudent('Zm9ybUF0dGFjaEZpbGVQZXJzb24=')">Guardar</button>
+                    </div>
+                    <button type="button" class="btn btn-sm btn-default" onclick="resultUpload(true);">Limpiar</button>
+                    <button type="button" class="btn btn-sm btn-default" onclick="backToSearch();">Atrás</button>
+                </div>
+            </div>
+        </form>
+    {include file="../structure/endWinget.tpl"}
+    
+    <div class="tableStundentFiles widget"></div>
+    
+    </div>
+<!-- -->
+{include file="../structure/endMatterContent.tpl"}
+{include file="../structure/endMainbarContent.tpl"}
+
+{include file="../structure/endContent.tpl"}
+
+{include file="../structure/footer.tpl"}
+<!-- -->
+{include file="../structure/bodyEnd.tpl"}
+{include file="../structure/HTMLEnd.tpl"}

@@ -1,0 +1,72 @@
+{include file="../structure/HTMLBegin.tpl"}
+{include file="../structure/header.tpl"}
+{include file="../structure/bodyBegin.tpl"}
+<!-- -->
+{include file="../structure/topBanner.tpl"}
+<!-- -->
+{include file="../structure/headerContent.tpl"}
+
+{include file="../structure/beginContent.tpl"}
+
+{include file="../structure/navigationContent.tpl"}
+{include file="../structure/beginMainbarContent.tpl"}
+{include file="../structure/beginMatterContent.tpl"}
+<!-- -->
+    {include file="../structure/beginWinget.tpl"}FILTROS
+    {include file="../structure/contentWinget.tpl"}
+        <form id="formSearch" name="formSearch" class="form-horizontal" role="form" >
+                    <div class="form-group">
+                            <label class="col-lg-2 control-label">Nombres</label>
+                            <div class="col-lg-4">
+                                    <input type="text" class="form-control" id="inputName" name="inputName" placeholder="Nombres" >
+                            </div>
+                    </div>
+            <div class="form-group">
+                            <label class="col-lg-2 control-label">Apellido Paterno</label>
+                            <div class="col-lg-4">
+                                    <input type="text" class="form-control" id="inputFName" name="inputFName" placeholder="Apellido Paterno" >
+                            </div>
+                    </div>
+            <div class="form-group">
+                            <label class="col-lg-2 control-label">Apellido Materno</label>
+                            <div class="col-lg-4">
+                                    <input type="text" class="form-control" id="inputMName" name="inputMName" placeholder="Apellido Materno" >
+                            </div>
+                    </div>
+            <div class="form-group">
+                            <label class="col-lg-2 control-label">Perfil</label>
+                <div class="col-lg-3">
+                    <select id="idPerfil" name="idPerfil" class="form-control">
+                        <option value="">-- TODOS --</option>
+                        <option value="1">ADMINISTRADOR</option>
+                        <option value="2">ALUMNO</option>
+                        <option value="3">ADMINISTRATIVO</option>
+                        <option value="4">DOCENTE</option>
+                    </select>
+                </div>
+                    </div>
+            <div class="col-lg-8 col-lg-offset-4">
+                            <button type="button" class="btn btn-info btn-sm" onclick="javascript:searchUsuarios()" >Buscar</button>
+                            <button type="reset" class="btn btn-default btn-sm" >Limpiar</button>
+                    </div><br />
+        </form>
+    {include file="../structure/endWinget.tpl"}
+<!-- contenido -->
+	<div class="tableUsuarios widget"></div>
+    <!--
+    {include file="../structure/beginWinget.tpl"}
+    Titulo
+    {include file="../structure/contentWinget.tpl"}
+    Contenido
+    {include file="../structure/endWinget.tpl"}
+    -->
+<!-- -->
+{include file="../structure/endMatterContent.tpl"}
+{include file="../structure/endMainbarContent.tpl"}
+
+{include file="../structure/endContent.tpl"}
+
+{include file="../structure/footer.tpl"}
+<!-- -->
+{include file="../structure/bodyEnd.tpl"}
+{include file="../structure/HTMLEnd.tpl"}

@@ -1,0 +1,145 @@
+{include file="../structure/HTMLBegin.tpl"}
+{include file="../structure/header.tpl"}
+{include file="../structure/bodyBegin.tpl"}
+<!-- -->
+{include file="../structure/topBanner.tpl"}
+<!-- -->
+{include file="../structure/headerContent.tpl"}
+
+{include file="../structure/beginContent.tpl"}
+
+{include file="../structure/navigationContent.tpl"}
+{include file="../structure/beginMainbarContent.tpl"}
+{include file="../structure/beginMatterContent.tpl"}
+
+    <form id="formMatriculaM" name="formMatriculaM" class="form-horizontal" role="form">
+        {include file="../structure/beginWinget.tpl"}GENERAR MATRÍCULA
+        {include file="../structure/contentWinget.tpl"}
+            <div class="form-group">
+                <label class="col-lg-2 control-label">Carrera</label>
+                <div class="col-lg-5">
+                    <select id="idCarrera" name="idCarrera" class="form-control" onchange="comboboxUsuarioCarrera();comboboxCiclos();comboboxSeccion();">
+                        <option selected="selected" value="">Seleccionar Carrera</option>
+                    </select>
+                </div>
+            </div>
+            <div class="form-group">
+                <label class="col-lg-2 control-label">Estudiante</label>
+                <div class="col-lg-5">
+                    <input id="idMatricula" name="idMatricula" type="text" class="notVisible">
+                    <select id="idUsuarioCarrera" name="idUsuarioCarrera" class="form-control" onchange="showExtraData();">
+                        <option selected="selected" value="">Seleccionar Estudiante</option>
+                    </select>
+                </div>
+                <span id="mensajeDNI" class="label label-info" style="padding:10px;">No se seleccionó estudiante.</span>
+            </div>
+            <!--<div class="form-group">
+                <label class="col-lg-2 control-label hidden-xs"></label>
+                <div class="col-lg-5 text-left">
+                    <span id="mensajeDNI" class="label label-info" style="padding:10px;">No se seleccionó estudiante.</span>
+                </div>
+            </div>-->
+            <div class="form-group">
+                <label class="col-lg-2 control-label">Sede</label>
+                <div class="col-lg-5">
+                    <select id="idSede" name="idSede" class="form-control">
+                        <option selected="selected" value="">Seleccionar Sede</option>
+                    </select>
+                </div>
+            </div>
+            <div class="form-group">
+                <label class="col-lg-2 control-label">Ciclo</label>
+                <div class="col-lg-2">
+                    <select id="idCiclo" name="idCiclo" class="form-control" onchange="comboboxSeccion();">
+                        <option selected="selected" value="">Seleccionar Ciclo</option>
+                    </select>
+                </div>
+                <label class="col-lg-1 control-label">Turno</label>
+                <div class="col-lg-2">
+                    <select id="idTurno" name="idTurno" class="form-control" onchange="comboboxSeccion();">
+                        <option selected="selected" value="">Seleccionar Turno</option>
+                    </select>
+                </div>
+            </div>
+            <div class="form-group">
+                <label class="col-lg-2 control-label">Seccion</label>
+                <div class="col-lg-3">
+                    <select id="idSeccion" name="idSeccion" class="form-control" onchange="showExtraData();">
+                        <option selected="selected" value="">Seleccionar Sección</option>
+                    </select>
+                </div>
+                <span id="seccionFound" class="label label-default" style="padding:10px;">No hay secciones.</span>
+                <span id="mensajeMax" class="label label-info" style="padding:10px;">No se seleccionó sección.</span>
+                <span id="mensajeIni" class="label label-info" style="padding:10px;">No se seleccionó sección.</span>
+            </div>
+            <!--<div class="form-group">
+                <label class="col-lg-2 control-label hidden-xs"></label>
+                <div class="col-lg-5 text-right">
+                    <span id="mensajeMax" class="label label-info" style="padding:10px;">No se seleccionó sección.</span>
+                    <span id="mensajeIni" class="label label-info" style="padding:10px;">No se seleccionó sección.</span>
+                </div>
+            </div>-->
+            <div class="form-group">
+                <label class="col-lg-2 control-label">Estado</label>
+                <div class="col-lg-3">
+                    <select id="idEstadoMatricula" name="idEstadoMatricula" class="form-control">
+                        <option selected="selected" value="">Seleccionar Estado</option>
+                    </select>
+                </div>
+            </div>
+            <div class="form-group">
+                <label class="col-lg-2 control-label">Benficio</label>
+                <div class="col-lg-5">
+                    <select id="idTipoBeneficio" name="idTipoBeneficio" class="form-control">
+                        <option selected="selected" value="">Seleccionar Beneficio</option>
+                    </select>
+                </div>
+            </div>
+            <div class="form-group">
+                <div class="col-lg-offset-4 col-lg-6">
+                    <!--<button type="button" class="btn btn-sm btn-primary" onclick="verDetallePlanEstudio();">Ver Cursos</button>-->
+                    <button id="buttonShowCourses" type="button" class="btn btn-sm btn-info" onclick="gridMatricula();">Buscar</button>
+                    <button id="buttomClearFil" type="button" class="btn btn-sm btn-default" onclick="clearForm('Zm9ybU1hdHJpY3VsYU0=');">Limpiar</button>
+                    <button id="buttomBackMant" type="button" class="btn btn-sm btn-default" onclick="reloadPage();" disabled="disabled">Atrás</button>
+                </div>
+            </div>
+        {include file="../structure/endWinget.tpl"}
+
+        <!--<div class="widget wgreen">
+            <div class="widget-head">
+                <div class="pull-left">Cursos</div>
+                <div class="widget-icons pull-right">
+                    <a href="#" class="wminimize"><i class="fa fa-chevron-up"></i></a> 
+                    <a href="#" class="wclose"><i class="fa fa-times"></i></a>
+                </div>
+                <div class="clearfix"></div>
+            </div>
+            <div class="widget-content">
+                <div class="padd">
+                    <div class="tableCursosMatricula">
+                    <br />
+                    </div>
+                    <input id="_idCiclo" name="_idCiclo" type="text" class="notVisible" readonly="">
+                    <input id="_idUsuarioCarrera" name="_idUsuarioCarrera" type="text" class="notVisible" readonly="">
+                    <input id="_idSeccion" name="_idSeccion" type="text" class="notVisible" readonly="">
+                    <button type="button" class="btn btn-sm btn-primary" onclick="confirmGenerateMatricula();">Generars Matrícula</button>
+                </div>
+            </div>
+            <div class="widget-foot">
+            </div>
+        </div>-->
+
+    <div class="tableMatriculas widget"></div>
+    <div class="tablePlanEstudiosMatricula widget"></div>
+
+    </form>
+<!-- -->
+{include file="../structure/endMatterContent.tpl"}
+{include file="../structure/endMainbarContent.tpl"}
+
+{include file="../structure/endContent.tpl"}
+
+{include file="../structure/footer.tpl"}
+<!-- -->
+{include file="../structure/bodyEnd.tpl"}
+{include file="../structure/HTMLEnd.tpl"}

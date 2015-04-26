@@ -1,0 +1,92 @@
+{include file="../structure/HTMLBegin.tpl"}
+{include file="../structure/header.tpl"}
+{include file="../structure/bodyBegin.tpl"}
+<!-- -->
+{include file="../structure/topBanner.tpl"}
+<!-- -->
+{include file="../structure/headerContent.tpl"}
+
+{include file="../structure/beginContent.tpl"}
+
+{include file="../structure/navigationContent.tpl"}
+{include file="../structure/beginMainbarContent.tpl"}
+{include file="../structure/beginMatterContent.tpl"}
+
+    <form id="formIngresarNotas" name="formIngresarNotas" class="form-horizontal" role="form">
+        {include file="../structure/beginWinget.tpl"}Ingresar Notas
+        {include file="../structure/contentWinget.tpl"}
+            <div class="form-group">
+                <label class="col-lg-2 control-label">Docente</label>
+                <div class="col-lg-5">
+                    <select id="idDocente" name="idDocente" class="form-control" onchange="comboboxCarreraNt();comboboxCarreraCicloNt();comboboxCarreraCicloCursoNt();comboboxCarreraCicloCursoSeccionNt();">
+                        <option selected="selected" value="">Seleccionar Docente</option>
+                    </select>
+                </div>
+            </div>
+            <div class="form-group">
+                <label class="col-lg-2 control-label">Carrera</label>
+                <div class="col-lg-5">
+                    <select id="idCarrera" name="idCarrera" class="form-control" onchange="comboboxCarreraCicloNt();comboboxCarreraCicloCursoNt();comboboxCarreraCicloCursoSeccionNt();">
+                        <option selected="selected" value="">Seleccionar Carrera</option>
+                    </select>
+                </div>
+            </div>
+            <div class="form-group">
+                <label class="col-lg-2 control-label">Ciclo</label>
+                <div class="col-lg-2">
+                    <select id="idCiclo" name="idCiclo" class="form-control" onchange="comboboxCarreraCicloCursoNt();comboboxCarreraCicloCursoSeccionNt();">
+                        <option selected="selected" value="">Seleccionar Ciclo</option>
+                    </select>
+                </div>
+                <label class="col-lg-1 control-label">Turno</label>
+                <div class="col-lg-2">
+                    <select id="idTurno" name="idTurno" class="form-control" onchange="comboboxCarreraCicloCursoSeccionNt();">
+                        <option selected="selected" value="">Seleccionar Turno</option>
+                    </select>
+                </div>
+            </div>
+            <div class="form-group">
+                <label class="col-lg-2 control-label">Cursos</label>
+                <div class="col-lg-5">
+                    <select id="idPlanEstudioCursos" name="idPlanEstudioCursos" class="form-control" onchange="comboboxCarreraCicloCursoSeccionNt();">
+                        <option selected="selected" value="">Seleccionar Cursos</option>
+                    </select>
+                </div>
+            </div>
+            <div class="form-group">
+                <label class="col-lg-2 control-label">Seccion</label>
+                <div class="col-lg-3">
+                    <select id="idSeccion" name="idSeccion" class="form-control">
+                        <option selected="selected" value="">Seleccionar Sección</option>
+                    </select>
+                </div>
+                <span id="seccionFound" class="label label-default" style="padding:10px;">No hay secciones.</span>
+                <!--<span id="mensajeMax" class="label label-info" style="padding:10px;">No se seleccionó sección.</span>
+                <span id="mensajeIni" class="label label-info" style="padding:10px;">No se seleccionó sección.</span>-->
+            </div>
+            <div class="form-group">
+                <div class="col-lg-offset-2 col-lg-6">
+                    <!--<button type="button" class="btn btn-sm btn-primary" onclick="verDetallePlanEstudio();">Ver Cursos</button>-->
+                    <button type="button" class="btn btn-sm btn-info" onclick="SearchRatingsStudentsOfSeccionPlanEstudio();">Ver Alumnos y Notas</button>
+                    <button type="button" class="btn btn-sm btn-default" onclick="clearFormNotas();">Limpiar</button>
+                </div>
+            </div>
+        {include file="../structure/endWinget.tpl"}
+    </form>
+    
+    <form id="formRatingsNotasStudents" name="formRatingsNotasStudents" class="form-horizontal" role="form">
+        <div class="tableDocentesCursos widget"></div>
+    </form>
+    
+
+    
+<!-- -->
+{include file="../structure/endMatterContent.tpl"}
+{include file="../structure/endMainbarContent.tpl"}
+
+{include file="../structure/endContent.tpl"}
+
+{include file="../structure/footer.tpl"}
+<!-- -->
+{include file="../structure/bodyEnd.tpl"}
+{include file="../structure/HTMLEnd.tpl"}

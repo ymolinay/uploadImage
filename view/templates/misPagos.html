@@ -1,0 +1,79 @@
+{include file="../structure/HTMLBegin.tpl"}
+{include file="../structure/header.tpl"}
+{include file="../structure/bodyBegin.tpl"}
+<!-- -->
+{include file="../structure/topBanner.tpl"}
+<!-- -->
+{include file="../structure/headerContent.tpl"}
+
+{include file="../structure/beginContent.tpl"}
+
+{include file="../structure/navigationContent.tpl"}
+{include file="../structure/beginMainbarContent.tpl"}
+{include file="../structure/beginMatterContent.tpl"}
+<!-- contenido -->
+{include file="../structure/beginWinget.tpl"}FILTROS
+{include file="../structure/contentWinget.tpl"}
+<form id="formInscripcion" name="formInscripcion" class="form-horizontal" role="form" >
+    {include file="../structure/beginWinget.tpl"}PROCESAR PAGO MATRICULA
+    {include file="../structure/contentWinget.tpl"}
+    <input id="idPagoMatricula" name="idPagoMatricula" type="text" class="notVisible">
+    <!--<input id="userType" name="userType" type="hidden" value="YWx1bW5v">-->
+    <div class="form-group">
+        <label class="col-lg-2 control-label">Carrera</label>
+        <div class="col-lg-5">
+            <select id="idCarrera" name="idCarrera" class="form-control" onchange="comboboxUsuarioCarrera();
+                    comboboxMatricula();
+                    showExtraData();">
+                <option selected="selected" value="">Seleccionar Carrera</option>
+            </select>
+        </div>
+    </div>
+    <div class="form-group">
+        <label class="col-lg-2 control-label">Estudiante</label>
+        <div class="col-lg-5">
+            <select id="idUsuarioCarrera" name="idUsuarioCarrera" class="form-control" onchange="showExtraData();
+                    comboboxMatricula();">
+                <option selected="selected" value="">Seleccionar Estudiante</option>
+            </select>
+        </div>
+        <span id="mensajeDNI" class="label label-info" style="padding:10px;">No se seleccionó estudiante.</span>
+    </div>
+    <div class="form-group">
+        <label class="col-lg-2 control-label">Matrícula</label>
+        <div class="col-lg-5">
+            <select id="idMatricula" name="idMatricula" class="form-control" onchange="showExtraData();">
+                <option selected="selected" value="">Seleccionar Matrícula</option>
+            </select>
+        </div>
+        <span id="pagoPendiente" class="label label-default" style="padding:10px;">No hay pagos pendientes.</span>
+    </div>
+    <div class="form-group">
+        <div class="clearfix col-lg-10 col-lg-offset-2">
+            <span id="mensajeCiclo" class="label label-info matriculaNFO" style="padding:10px;">No se seleccionó Matrícula.</span>
+            <span id="mensajeSeccion" class="label label-info matriculaNFO" style="padding:10px;">No se seleccionó Matrícula.</span>
+            <span id="mensajeTurno" class="label label-info matriculaNFO" style="padding:10px;">No se seleccionó Matrícula.</span>
+            <span id="mensajeSede" class="label label-info matriculaNFO" style="padding:10px;">No se seleccionó Matrícula.</span>
+            <span id="mensajeEstado" class="label label-info matriculaNFO" style="padding:10px;">No se seleccionó Matrícula.</span>
+        </div>
+    </div>
+    <div class="form-group">
+        <div class="col-lg-5 col-lg-offset-5">
+            <button type="button" id="buttonRegister" class="btn btn-info btn-sm" onclick="gridPagos()" >Ver Pagos</button>
+            <button type="reset" class="btn btn-default btn-sm" >Limpiar</button>
+        </div>
+    </div>
+
+    {include file="../structure/endWinget.tpl"}
+</form>
+<div class="tablePagos widget"></div>
+<!-- -->
+{include file="../structure/endMatterContent.tpl"}
+{include file="../structure/endMainbarContent.tpl"}
+
+{include file="../structure/endContent.tpl"}
+
+{include file="../structure/footer.tpl"}
+<!-- -->
+{include file="../structure/bodyEnd.tpl"}
+{include file="../structure/HTMLEnd.tpl"}

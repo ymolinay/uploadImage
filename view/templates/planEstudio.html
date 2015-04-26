@@ -1,0 +1,67 @@
+{include file="../structure/HTMLBegin.tpl"}
+{include file="../structure/header.tpl"}
+{include file="../structure/bodyBegin.tpl"}
+<!-- -->
+{include file="../structure/topBanner.tpl"}
+<!-- -->
+{include file="../structure/headerContent.tpl"}
+
+{include file="../structure/beginContent.tpl"}
+
+{include file="../structure/navigationContent.tpl"}
+{include file="../structure/beginMainbarContent.tpl"}
+{include file="../structure/beginMatterContent.tpl"}
+<!-- -->
+    {include file="../structure/beginWinget.tpl"}PLAN DE ESTUDIOS
+    {include file="../structure/contentWinget.tpl"}
+        <form id="formPlanEstudio" name="formPlanEstudio" class="form-horizontal" role="form" >
+            <div class="form-group">
+                <label class="col-lg-2 control-label">Carrera</label>
+                <div class="col-lg-5">
+                    <select id="idCarrera" name="idCarrera" class="form-control" onchange="comboboxCiclo();">
+                        <option selected="selected" value="">Seleccionar Carrera</option>
+                    </select>
+                </div>
+            </div>
+            <div class="form-group">
+                <label class="col-lg-2 control-label">Ciclo</label>
+                <div class="col-lg-5">
+                    <select id="idCiclo" name="idCiclo" class="form-control">
+                        <option selected="selected" value="">Seleccionar Ciclo</option>
+                    </select>
+                </div>
+            </div>
+            <div class="form-group">
+                <label class="col-lg-2 control-label">Curso</label>
+                <div class="col-lg-5">
+                    <select id="idCurso" name="idCurso" class="form-control">
+                        <option selected="selected" value="">Seleccionar Curso</option>
+                    </select>
+                </div>
+            </div>
+            <div class="form-group">
+                <label class="col-lg-2 control-label">Nota mínima</label>
+                <div class="col-lg-5">
+                    <input type="text" class="notVisible" id="inputIdPlan" name="inputIdPlan">
+                    <input type="text" class="form-control" id="inputMinRating" name="inputMinRating" placeholder="Nota mínima" >
+                </div>
+            </div>
+            <div class="col-lg-8 col-lg-offset-4">
+                <button type="reset" class="btn btn-default btn-sm" onclick="cleanDivPlanEstudio()">Limpiar</button>
+                <button type="button" class="btn btn-info btn-sm" onclick="confirmSave('cGxhbkVzdHVkaW8=','Zm9ybVBsYW5Fc3R1ZGlv','cleanDivPlanEstudio();')" >Guardar</button>
+                <button type="button" class="btn btn-info btn-sm" onclick="gridPlanEstudio()" >Buscar</button>
+            </div><br />
+        </form>
+    {include file="../structure/endWinget.tpl"}
+<!-- contenido -->
+	<div class="tablePlanEstudios widget"></div>
+<!-- -->
+{include file="../structure/endMatterContent.tpl"}
+{include file="../structure/endMainbarContent.tpl"}
+
+{include file="../structure/endContent.tpl"}
+
+{include file="../structure/footer.tpl"}
+<!-- -->
+{include file="../structure/bodyEnd.tpl"}
+{include file="../structure/HTMLEnd.tpl"}

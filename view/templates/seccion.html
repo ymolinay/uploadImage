@@ -1,0 +1,101 @@
+{include file="../structure/HTMLBegin.tpl"}
+{include file="../structure/header.tpl"}
+{include file="../structure/bodyBegin.tpl"}
+<!-- -->
+{include file="../structure/topBanner.tpl"}
+<!-- -->
+{include file="../structure/headerContent.tpl"}
+
+{include file="../structure/beginContent.tpl"}
+
+{include file="../structure/navigationContent.tpl"}
+{include file="../structure/beginMainbarContent.tpl"}
+{include file="../structure/beginMatterContent.tpl"}
+<!-- -->
+{include file="../structure/beginWinget.tpl"}CARRERAS
+{include file="../structure/contentWinget.tpl"}
+<form id="formSeccion" name="formSeccion" class="form-horizontal" role="form" >
+    <div class="form-group">
+        <label class="col-lg-2 control-label">Cant. Máxima</label>
+        <div class="col-lg-2">
+            <input type="text" class="form-control" id="inputCantMaxima" name="inputCantMaxima" placeholder="Cantidad Máxima" >
+        </div>
+    </div>
+    <div class="form-group">
+        <label class="col-lg-2 control-label">Inicio</label>
+        <div class="col-lg-4">
+            <div id="insInicio" class="input-append input-group dtpicker">
+                <input id="inputInicio" name="inputInicio" data-format="dd-MM-yyyy" type="text" class="form-control">
+                <span class="input-group-addon add-on">
+                    <i data-time-icon="fa fa-times" data-date-icon="fa fa-calendar" class="fa fa-calendar"></i>
+                </span>
+            </div>
+        </div>
+    </div>
+    <div class="form-group">
+        <label class="col-lg-2 control-label">Fin</label>
+        <div class="col-lg-4">
+            <div id="insFin" class="input-append input-group dtpicker">
+                <input id="inputFin" name="inputFin" data-format="dd-MM-yyyy" type="text" class="form-control">
+                <span class="input-group-addon add-on">
+                    <i data-time-icon="fa fa-times" data-date-icon="fa fa-calendar" class="fa fa-calendar"></i>
+                </span>
+            </div>
+        </div>
+    </div>
+    <div class="form-group">
+        <label class="col-lg-2 control-label">Turno</label>
+        <div class="col-lg-2">
+            <select id="inputTurno" name="inputTurno" class="form-control">
+                <option selected="selected" value="">Seleccionar Turno</option>
+            </select>
+        </div>
+    </div>
+    <div class="form-group">
+        <label class="col-lg-2 control-label">Carrera</label>
+        <div class="col-lg-3">
+            <select id="inputCarrera" name="inputCarrera" class="form-control" onchange="comboboxCiclos();">
+                <option value="">Seleccionar Carrera</option>
+            </select>
+        </div>
+    </div>
+    <div class="form-group">
+        <label class="col-lg-2 control-label">Ciclo</label>
+        <div class="col-lg-3">
+            <select class="form-control" name="idCiclo" id="idCiclo">
+                <option value="" selected="selected">Seleccionar Ciclo</option>
+                <option value="1">1ro</option>
+                <option value="2">2do</option>
+                <option value="3">3ro</option>
+                <option value="4">4to</option>
+                <option value="5">5to</option>
+                <option value="6">6to</option>
+            </select>
+        </div>
+    </div>
+    <div class="form-group">
+        <label class="col-lg-2 control-label">Descripción</label>
+        <div class="col-lg-4">
+            <input type="text" class="notVisible" id="inputIdSeccion" name="inputIdSeccion">
+            <input type="text" class="form-control" id="inputDescripcion" name="inputDescripcion" placeholder="Descripcion" >
+        </div>
+    </div>
+    <div class="col-lg-8 col-lg-offset-4">
+        <button type="reset" class="btn btn-default btn-sm" >Limpiar</button>
+        <button type="button" class="btn btn-info btn-sm" onclick="confirmSave('c2VjY2lvbg==', 'Zm9ybVNlY2Npb24=', 'gridSeccion();')" >Guardar</button>
+        <button type="button" class="btn btn-info btn-sm" onclick="gridSeccion();" >Buscar</button>
+    </div><br />
+</form>
+{include file="../structure/endWinget.tpl"}
+<!-- contenido -->
+<div class="tableSeccion widget"></div>
+<!-- -->
+{include file="../structure/endMatterContent.tpl"}
+{include file="../structure/endMainbarContent.tpl"}
+
+{include file="../structure/endContent.tpl"}
+
+{include file="../structure/footer.tpl"}
+<!-- -->
+{include file="../structure/bodyEnd.tpl"}
+{include file="../structure/HTMLEnd.tpl"}

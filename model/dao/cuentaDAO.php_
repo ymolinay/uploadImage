@@ -1,0 +1,28 @@
+<?php
+
+require_once __DIR__.'/../config/mysqli.data.php';
+require_once __DIR__.'/../entity/cuenta.php';
+
+class CuentaDAO {
+
+    public $objCuenta;
+    private $task;
+
+    const TABLE = "cuenta";
+
+    public function __construct() {
+        $this->objCuenta = new Cuenta();
+        $this->task = new Task();
+    }
+
+    public function ExecuteCompleteCombobox() {
+        $this->task->setTables(self::TABLE);
+        $this->task->setFields('idCuenta;nombreComercial');
+        $this->task->setWhereFields('indicador');
+        $this->task->setWhereLogical('=');
+        $this->task->setWhereValues('1');
+        $this->task->setOrder('nombreComercial');
+        $this->task->setValuesOrder('asc');
+        return $this->task->executeSelect();
+    }
+}

@@ -1,0 +1,92 @@
+Archivo: mysqli.data.php	Error 00002: Unknown database 'catodb'	Tiempo: 27.01.2015 04:08:50
+Archivo: mysqli.data.php	Error 00002: Unknown database 'catodb'	Tiempo: 27.01.2015 04:08:50
+Archivo: mysqli.data.php	Error 00003: Error al ejecutar la consulta {call spTransaction("SELECT","accesos","MAX(idAcceso)","","","","","","");}	Tiempo: 26.01.2015 10:37:39
+Archivo: mysqli.data.php	Error 00003: Error al ejecutar la consulta {call spTransaction("SELECT","accesos","MAX(idAcceso)","","","","","","");}	Tiempo: 26.01.2015 10:37:39
+Archivo: mysqli.data.php	Error 00003: Error al ejecutar la consulta {call spTransaction("SELECT","accesos","MAX(idAcceso)","","","","","","");}	Tiempo: 26.01.2015 10:40:25
+Archivo: mysqli.data.php	Error 00003: Error al ejecutar la consulta {call spTransaction("SELECT","accesos","MAX(idAcceso)","","","","","","");}	Tiempo: 26.01.2015 10:40:25
+Archivo: mysqli.data.php	Error 00003: Error al ejecutar la consulta {call spTransaction("SELECT","accesos","MAX(idAcceso)","","","","","","");}	Tiempo: 26.01.2015 10:40:40
+Archivo: mysqli.data.php	Error 00003: Error al ejecutar la consulta {call spTransaction("SELECT","accesos","MAX(idAcceso)","","","","","","");}	Tiempo: 26.01.2015 10:40:40
+Archivo: mysqli.data.php	Error 00003: Error al ejecutar la consulta {call spTransaction("SELECT","accesos","MAX(idAcceso)","","","","","","");}	Tiempo: 26.01.2015 10:40:41
+Archivo: mysqli.data.php	Error 00003: Error al ejecutar la consulta {call spTransaction("SELECT","accesos","MAX(idAcceso)","","","","","","");}	Tiempo: 26.01.2015 10:40:41
+Archivo: mysqli.data.php	Error 00003: Error al ejecutar la consulta {call spTransaction("SELECT","accesos","MAX(idAcceso)","","","","","","");}	Tiempo: 26.01.2015 10:40:47
+Archivo: mysqli.data.php	Error 00003: Error al ejecutar la consulta {call spTransaction("SELECT","accesos","MAX(idAcceso)","","","","","","");}	Tiempo: 26.01.2015 10:40:47
+Archivo: mysqli.data.php	Error 00003: Error al ejecutar la consulta {call spTransaction("SELECT","accesos","MAX(idAcceso)","","","","","","");}	Tiempo: 26.01.2015 10:41:49
+Archivo: mysqli.data.php	Error 00003: Error al ejecutar la consulta {call spTransaction("SELECT","accesos","MAX(idAcceso)","","","","","","");}	Tiempo: 26.01.2015 10:41:49
+Archivo: mysqli.data.php	Error 00003: Error al ejecutar la consulta {call spTransaction("SELECT","accesos","MAX(idAcceso)","","","","","","");}	Tiempo: 26.01.2015 10:43:18
+Archivo: mysqli.data.php	Error 00003: Error al ejecutar la consulta {call spTransaction("SELECT","accesos","MAX(idAcceso)","","","","","","");}	Tiempo: 26.01.2015 10:43:18
+Archivo: mysqli.data.php	Error 00003: Error al ejecutar la consulta {call spTransaction("SELECT","accesos","MAX(idAcceso)","","","","","","");}	Tiempo: 26.01.2015 10:43:27
+Archivo: mysqli.data.php	Error 00003: Error al ejecutar la consulta {call spTransaction("SELECT","accesos","MAX(idAcceso)","","","","","","");}	Tiempo: 26.01.2015 10:43:27
+Archivo: mysqli.data.php	Error 00003: Error al ejecutar la consulta {call spTransaction("SELECT","accesos","MAX(idAcceso)","","","","","","");}	Tiempo: 26.01.2015 10:43:48
+Archivo: mysqli.data.php	Error 00003: Error al ejecutar la consulta {call spTransaction("SELECT","accesos","MAX(idAcceso)","","","","","","");}	Tiempo: 26.01.2015 10:43:48
+Archivo: mysqli.data.php	Error 00003: Error al ejecutar la consulta {call spTransaction("SELECT","accesos","MAX(idAcceso)","","","","","","");}	Tiempo: 26.01.2015 10:44:30
+Archivo: mysqli.data.php	Error 00003: Error al ejecutar la consulta {call spTransaction("SELECT","accesos","MAX(idAcceso)","","","","","","");}	Tiempo: 26.01.2015 10:44:30
+Archivo: mysqli.data.php	Error 00003: Error al ejecutar la consulta {call spTransaction("SELECT","accesos","MAX(idAcceso)","","","","","","");}	Tiempo: 26.01.2015 10:45:26
+Archivo: mysqli.data.php	Error 00003: Error al ejecutar la consulta {call spTransaction("SELECT","accesos","MAX(idAcceso)","","","","","","");}	Tiempo: 26.01.2015 10:45:26
+Archivo: mysqli.data.php	Error 00002: Access denied for user 'root'@'localhost' (using password: NO)	Tiempo: 08.02.2015 04:30:18
+Archivo: mysqli.data.php	Error 00002: Access denied for user 'root'@'localhost' (using password: NO)	Tiempo: 08.02.2015 04:30:18
+Archivo: mysqli.data.php	Error 00002: Access denied for user 'root'@'localhost' (using password: NO)	Tiempo: 08.02.2015 04:30:23
+Archivo: mysqli.data.php	Error 00002: Access denied for user 'root'@'localhost' (using password: NO)	Tiempo: 08.02.2015 04:30:23
+Archivo: mysqli.data.php	Error 00002: Access denied for user 'root'@'localhost' (using password: NO)	Tiempo: 08.02.2015 04:30:58
+Archivo: mysqli.data.php	Error 00002: Access denied for user 'root'@'localhost' (using password: NO)	Tiempo: 08.02.2015 04:30:58
+Archivo: mysqli.data.php	Error 00002: Access denied for user 'root'@'localhost' (using password: NO)	Tiempo: 08.02.2015 04:31:22
+Archivo: mysqli.data.php	Error 00002: Access denied for user 'root'@'localhost' (using password: NO)	Tiempo: 08.02.2015 04:31:22
+Archivo: mysqli.data.php	Error 00002: Access denied for user 'root'@'localhost' (using password: NO)	Tiempo: 08.02.2015 04:31:40
+Archivo: mysqli.data.php	Error 00002: Access denied for user 'root'@'localhost' (using password: NO)	Tiempo: 08.02.2015 04:31:40
+Archivo: mysqli.data.php	Error 00002: Access denied for user 'root'@'localhost' (using password: NO)	Tiempo: 08.02.2015 04:37:05
+Archivo: mysqli.data.php	Error 00002: Access denied for user 'root'@'localhost' (using password: NO)	Tiempo: 08.02.2015 04:37:05
+Archivo: mysqli.data.php	Error 00002: Access denied for user 'root'@'localhost' (using password: NO)	Tiempo: 08.02.2015 04:37:26
+Archivo: mysqli.data.php	Error 00002: Access denied for user 'root'@'localhost' (using password: NO)	Tiempo: 08.02.2015 04:37:26
+Archivo: mysqli.data.php	Error 00002: Access denied for user 'root'@'localhost' (using password: NO)	Tiempo: 08.02.2015 04:39:08
+Archivo: mysqli.data.php	Error 00002: Access denied for user 'root'@'localhost' (using password: NO)	Tiempo: 08.02.2015 04:39:08
+Archivo: mysqli.data.php	Error 00002: Access denied for user 'root'@'localhost' (using password: NO)	Tiempo: 08.02.2015 04:39:22
+Archivo: mysqli.data.php	Error 00002: Access denied for user 'root'@'localhost' (using password: NO)	Tiempo: 08.02.2015 04:39:22
+Archivo: mysqli.data.php	Error 00002: Access denied for user 'root'@'localhost' (using password: NO)	Tiempo: 08.02.2015 04:40:22
+Archivo: mysqli.data.php	Error 00002: Access denied for user 'root'@'localhost' (using password: NO)	Tiempo: 08.02.2015 04:40:22
+Archivo: mysqli.data.php	Error 00002: Access denied for user 'root'@'localhost' (using password: NO)	Tiempo: 08.02.2015 04:45:24
+Archivo: mysqli.data.php	Error 00002: Access denied for user 'root'@'localhost' (using password: NO)	Tiempo: 08.02.2015 04:45:24
+Archivo: mysqli.data.php	Error 00002: Access denied for user 'root'@'localhost' (using password: YES)	Tiempo: 26.02.2015 12:35:00
+Archivo: mysqli.data.php	Error 00002: Access denied for user 'root'@'localhost' (using password: YES)	Tiempo: 26.02.2015 12:35:00
+Archivo: mysqli.data.php	Error 00002: Access denied for user 'root'@'localhost' (using password: YES)	Tiempo: 26.02.2015 12:35:03
+Archivo: mysqli.data.php	Error 00002: Access denied for user 'root'@'localhost' (using password: YES)	Tiempo: 26.02.2015 12:35:03
+Archivo: mysqli.data.php	Error 00002: Access denied for user 'root'@'localhost' (using password: YES)	Tiempo: 26.02.2015 12:35:10
+Archivo: mysqli.data.php	Error 00002: Access denied for user 'root'@'localhost' (using password: YES)	Tiempo: 26.02.2015 12:35:10
+Archivo: mysqli.data.php	Error 00002: Access denied for user 'root'@'localhost' (using password: YES)	Tiempo: 26.02.2015 12:35:12
+Archivo: mysqli.data.php	Error 00002: Access denied for user 'root'@'localhost' (using password: YES)	Tiempo: 26.02.2015 12:35:12
+Archivo: mysqli.data.php	Error 00002: Access denied for user 'root'@'localhost' (using password: YES)	Tiempo: 26.02.2015 12:36:06
+Archivo: mysqli.data.php	Error 00002: Access denied for user 'root'@'localhost' (using password: YES)	Tiempo: 26.02.2015 12:36:06
+Archivo: mysqli.data.php	Error 00002: Access denied for user 'root'@'localhost' (using password: YES)	Tiempo: 26.02.2015 12:36:12
+Archivo: mysqli.data.php	Error 00002: Access denied for user 'root'@'localhost' (using password: YES)	Tiempo: 26.02.2015 12:36:12
+Archivo: mysqli.data.php	Error 00002: Access denied for user 'root'@'localhost' (using password: YES)	Tiempo: 26.02.2015 12:36:22
+Archivo: mysqli.data.php	Error 00002: Access denied for user 'root'@'localhost' (using password: YES)	Tiempo: 26.02.2015 12:36:22
+Archivo: mysqli.data.php	Error 00002: Access denied for user 'root'@'localhost' (using password: YES)	Tiempo: 04.03.2015 11:47:58
+Archivo: mysqli.data.php	Error 00002: Access denied for user 'root'@'localhost' (using password: YES)	Tiempo: 04.03.2015 11:47:58
+Archivo: mysqli.data.php	Error 00002: Access denied for user 'root'@'localhost' (using password: NO)	Tiempo: 15.03.2015 10:40:30
+Archivo: mysqli.data.php	Error 00002: Access denied for user 'root'@'localhost' (using password: NO)	Tiempo: 15.03.2015 10:40:30
+Archivo: mysqli.data.php	Error 00002: Access denied for user 'root'@'localhost' (using password: NO)	Tiempo: 15.03.2015 10:40:41
+Archivo: mysqli.data.php	Error 00002: Access denied for user 'root'@'localhost' (using password: NO)	Tiempo: 15.03.2015 10:40:41
+Archivo: mysqli.data.php	Error 00002: Access denied for user 'cato'@'localhost' (using password: YES)	Tiempo: 27.03.2015 06:54:38
+Archivo: mysqli.data.php	Error 00002: Access denied for user 'cato'@'localhost' (using password: YES)	Tiempo: 27.03.2015 06:54:38
+Archivo: mysqli.data.php	Error 00002: Access denied for user 'cato'@'localhost' (using password: YES)	Tiempo: 27.03.2015 06:54:42
+Archivo: mysqli.data.php	Error 00002: Access denied for user 'cato'@'localhost' (using password: YES)	Tiempo: 27.03.2015 06:54:42
+Archivo: mysqli.data.php	Error 00002: Access denied for user 'cato'@'localhost' (using password: YES)	Tiempo: 27.03.2015 06:54:44
+Archivo: mysqli.data.php	Error 00002: Access denied for user 'cato'@'localhost' (using password: YES)	Tiempo: 27.03.2015 06:54:44
+Archivo: mysqli.data.php	Error 00002: Access denied for user 'cato'@'localhost' (using password: YES)	Tiempo: 27.03.2015 06:54:51
+Archivo: mysqli.data.php	Error 00002: Access denied for user 'cato'@'localhost' (using password: YES)	Tiempo: 27.03.2015 06:54:51
+Archivo: mysqli.data.php	Error 00003: Error al ejecutar la consulta {call spTransaction("SELECT","archivo","MAX(idArchivo)","","","","","","");}	Tiempo: 04.04.2015 11:31:35
+Archivo: mysqli.data.php	Error 00003: Error al ejecutar la consulta {call spTransaction("SELECT","docenteseccioncurso","MAX(idDocenteSeccionCurso)","","","","","","");}	Tiempo: 05.04.2015 10:30:28
+Archivo: mysqli.data.php	Error 00003: Error al ejecutar la consulta {call spTransaction("SELECT","docenteseccioncurso","MAX(idDocenteSeccionCurso)","","","","","","");}	Tiempo: 05.04.2015 10:31:40
+Archivo: mysqli.data.php	Error 00002: Host '201.240.41.193' is not allowed to connect to this MySQL server	Tiempo: 17.04.2015 07:16:58
+Archivo: mysqli.data.php	Error 00002: Host '201.240.41.193' is not allowed to connect to this MySQL server	Tiempo: 17.04.2015 07:16:58
+Archivo: mysqli.data.php	Error 00002: Access denied for user 'cato'@'localhost' (using password: YES)	Tiempo: 18.04.2015 05:47:14
+Archivo: mysqli.data.php	Error 00002: Access denied for user 'cato'@'localhost' (using password: YES)	Tiempo: 18.04.2015 05:47:14
+Archivo: mysqli.data.php	Error 00002: Access denied for user 'cato'@'localhost' (using password: YES)	Tiempo: 18.04.2015 05:47:19
+Archivo: mysqli.data.php	Error 00002: Access denied for user 'cato'@'localhost' (using password: YES)	Tiempo: 18.04.2015 05:47:19
+Archivo: mysqli.data.php	Error 00002: Access denied for user 'cato'@'localhost' (using password: YES)	Tiempo: 18.04.2015 12:41:12
+Archivo: mysqli.data.php	Error 00002: Access denied for user 'cato'@'localhost' (using password: YES)	Tiempo: 18.04.2015 12:41:12
+Archivo: mysqli.data.php	Error 00002: Access denied for user 'cato'@'localhost' (using password: YES)	Tiempo: 18.04.2015 12:43:21
+Archivo: mysqli.data.php	Error 00002: Access denied for user 'cato'@'localhost' (using password: YES)	Tiempo: 18.04.2015 12:43:21
+Archivo: mysqli.data.php	Error 00002: Access denied for user 'cato'@'localhost' (using password: YES)	Tiempo: 18.04.2015 12:43:21
+Archivo: mysqli.data.php	Error 00002: Access denied for user 'cato'@'localhost' (using password: YES)	Tiempo: 19.04.2015 08:51:48
+Archivo: mysqli.data.php	Error 00002: Access denied for user 'cato'@'localhost' (using password: YES)	Tiempo: 19.04.2015 08:51:48
+Archivo: mysqli.data.php	Error 00002: Access denied for user 'cato'@'localhost' (using password: YES)	Tiempo: 19.04.2015 08:51:50
+Archivo: mysqli.data.php	Error 00002: Access denied for user 'cato'@'localhost' (using password: YES)	Tiempo: 19.04.2015 08:51:50

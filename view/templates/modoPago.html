@@ -1,0 +1,43 @@
+{include file="../structure/HTMLBegin.tpl"}
+{include file="../structure/header.tpl"}
+{include file="../structure/bodyBegin.tpl"}
+<!-- -->
+{include file="../structure/topBanner.tpl"}
+<!-- -->
+{include file="../structure/headerContent.tpl"}
+
+{include file="../structure/beginContent.tpl"}
+
+{include file="../structure/navigationContent.tpl"}
+{include file="../structure/beginMainbarContent.tpl"}
+{include file="../structure/beginMatterContent.tpl"}
+<!-- contenido -->
+<form id="formModoPago" name="formModoPago" class="form-horizontal" role="form" >
+    {include file="../structure/beginWinget.tpl"}MODOS DE PAGO
+    {include file="../structure/contentWinget.tpl"}
+    <input id="idModoPago" name="idModoPago" type="text" class="notVisible">
+    <div class="form-group">
+        <label class="col-lg-2 control-label">Descripción</label>
+        <div class="col-lg-3">
+            <input id="Descripcion" name="Descripcion" type="text" class="form-control" placeholder="Descripción" >
+        </div>
+    </div>
+    <div class="form-group">
+        <div class="col-lg-5 col-lg-offset-5">
+            <button type="button" id="buttonRegister" class="btn btn-info btn-sm" onclick="confirmSave('bW9kb1BhZ28=', 'Zm9ybU1vZG9QYWdv', 'gridModoPago()', '')" >Registrar</button>
+            <button type="reset" class="btn btn-default btn-sm" >Limpiar</button>
+        </div>
+    </div>
+    {include file="../structure/endWinget.tpl"}
+</form>
+<div class="tableModoPago widget"></div>
+<!-- -->
+{include file="../structure/endMatterContent.tpl"}
+{include file="../structure/endMainbarContent.tpl"}
+
+{include file="../structure/endContent.tpl"}
+
+{include file="../structure/footer.tpl"}
+<!-- -->
+{include file="../structure/bodyEnd.tpl"}
+{include file="../structure/HTMLEnd.tpl"}

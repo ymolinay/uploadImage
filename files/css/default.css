@@ -1,0 +1,192 @@
+.message
+{
+    font-family: Calibri, Arial, Tahoma;
+    font-size: 12px;
+    width: 100%;
+    height: auto;
+}
+.message .alert
+{
+    text-align: center;
+    background: #FBF9E2;
+    color: #BE9F50;
+    border: 1px solid #F8F0D1;
+    padding: 10px;
+    width: 100%;
+    margin-bottom: 18px;
+}
+.message .error
+{
+    text-align: center;
+    background: #F0DEDE;
+    color: #B14D47;
+    border: 1px solid #EBD3D6;
+    padding: 10px;
+    width: 100%;
+    margin-bottom: 18px;
+}
+.message .success
+{
+    text-align: center;
+    background: #E0F1D6;
+    color: #4E8A41;
+    border: 1px solid #DCEECE;
+    padding: 10px;
+    width: 100%;
+    margin-bottom: 18px;
+}
+
+#backgroundLock{
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    height:100%;
+    width:100%;
+    z-index: 100;
+    background-color: #000;
+    filter:alpha(opacity=0.7);
+    -moz-opacity: 0.7;
+    opacity: 0.7;
+    display:none;
+}
+
+.notVisible{
+    visibility: hidden;
+    display: none;
+}
+
+.yesVisible{
+    visibility: visible;
+    display: block;
+}
+
+.table thead tr td,
+.table thead tr th{
+    text-align: center;
+    color: #fff;
+    background-color: #000;
+}
+
+.table tbody tr:hover td{
+    background-color: #ffc876;
+    font-style: italic;
+}
+
+.table thead tr td span.glyphicon-sort-by-attributes,
+.table thead tr th span.glyphicon-sort-by-attributes{
+    font-size: 12px;
+}
+
+.gridselect{
+    height: 25px;
+    padding: 0px;
+}
+.gridselect:focus{
+    height: 25px;
+    padding: 0px;
+}
+
+.select2error{
+    border: 1px solid #B14D47;
+}
+
+.noResult{
+    background: url("../images/noResult.png") no-repeat scroll center bottom / 100px auto rgba(0, 0, 0, 0);
+    font-size: 12px;
+    height: 80px;
+    text-align: center;
+}
+
+.spacing{ padding: 5px; }
+.spacing2{ padding: 10px; }
+.spacing3{ padding: 15px; }
+
+.fileUpload {
+    position: relative;
+    overflow: hidden;
+    /*margin: 10px;*/
+}
+.fileUpload input.upload {
+    position: absolute;
+    top: 0;
+    right: 0;
+    margin: 0;
+    padding: 0;
+    font-size: 20px;
+    cursor: pointer;
+    opacity: 0;
+    filter: alpha(opacity=0);
+}
+
+.clearFileInput{
+    display: inline-block;
+}
+
+.contentRatingStudent{
+    padding: 3px 0 !important;
+    text-align: center;
+}
+
+.inputRatingStudent{
+    border: 1px solid #ccc;
+    border-radius: 0;
+    padding: 0;
+    text-align: center;
+    width: 40px;
+}
+
+input[value="0"].inputRatingStudent{color: rgb(255,0,0);}
+input[value="1"].inputRatingStudent{color: rgb(255,0,0);}
+input[value="2"].inputRatingStudent{color: rgb(255,0,0);}
+input[value="3"].inputRatingStudent{color: rgb(255,0,0);}
+input[value="4"].inputRatingStudent{color: rgb(255,0,0);}
+input[value="5"].inputRatingStudent{color: rgb(255,0,0);}
+input[value="6"].inputRatingStudent{color: rgb(255,0,0);}
+input[value="7"].inputRatingStudent{color: rgb(255,0,0);}
+input[value="8"].inputRatingStudent{color: rgb(255,0,0);}
+input[value="9"].inputRatingStudent{color: rgb(255,0,0);}
+input[value="10"].inputRatingStudent{color: rgb(255,0,0);}
+input[value="11"].inputRatingStudent{color: rgb(0,0,0);}
+input[value="12"].inputRatingStudent{color: rgb(0,0,0);}
+input[value="13"].inputRatingStudent{color: rgb(0,0,0);}
+input[value="14"].inputRatingStudent{color: rgb(0,0,0);}
+input[value="15"].inputRatingStudent{color: rgb(0,0,0);}
+input[value="16"].inputRatingStudent{color: rgb(0,0,0);}
+input[value="17"].inputRatingStudent{color: rgb(0,0,0);}
+input[value="18"].inputRatingStudent{color: rgb(0,0,0);}
+input[value="19"].inputRatingStudent{color: rgb(0,0,0);}
+input[value="20"].inputRatingStudent{color: rgb(0,0,0);}
+
+#formRatingsNotasStudents .INFormControl{
+    margin-bottom: 2px;
+}
+
+#formRatingsNotasStudents .INLeft{
+    display: inline-block;
+}
+
+#formRatingsNotasStudents .INRight{
+    display: inline-block;
+}
+
+#formRatingsNotasStudents .INFormControl .form-control{
+    background-color: rgba(0, 0, 0, 0);
+    border: medium none;
+    box-shadow: none;
+}
+
+#formRatingsNotasStudents #data-table > tbody > tr {
+    cursor: pointer;
+}
+#formRatingsNotasStudents #data-table tr.active td {
+    background: none repeat scroll 0 0 #bfbfbf;
+    font-weight: bold;
+}
+
+.tableMyRatings div.table-responsive{
+    overflow-x: auto;
+}
+
+.tableMyRatings div.table-responsive td.cursoRatingName{
+    min-width: 240px;
+}

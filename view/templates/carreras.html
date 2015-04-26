@@ -1,0 +1,75 @@
+{include file="../structure/HTMLBegin.tpl"}
+{include file="../structure/header.tpl"}
+{include file="../structure/bodyBegin.tpl"}
+<!-- -->
+{include file="../structure/topBanner.tpl"}
+<!-- -->
+{include file="../structure/headerContent.tpl"}
+
+{include file="../structure/beginContent.tpl"}
+
+{include file="../structure/navigationContent.tpl"}
+{include file="../structure/beginMainbarContent.tpl"}
+{include file="../structure/beginMatterContent.tpl"}
+<!-- -->
+    {include file="../structure/beginWinget.tpl"}CARRERAS
+    {include file="../structure/contentWinget.tpl"}
+        <form id="formCarrera" name="formCarrera" class="form-horizontal" role="form" >
+            <div class="form-group">
+                <label class="col-lg-2 control-label">Nombres</label>
+                <div class="col-lg-4">
+                    <input type="text" class="notVisible" id="inputIdCarrera" name="inputIdCarrera">
+                    <input type="text" class="form-control" id="inputDescripcion" name="inputDescripcion" placeholder="Descripcion" >
+                </div>
+            </div>
+            <div class="form-group">
+                <label class="col-lg-2 control-label">Ciclos</label>
+                <div class="col-lg-4">
+                    <select id="inputPeriodos" name="inputPeriodos" class="form-control">
+                        <option value="">-- Meses --</option>
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5">5</option>
+                        <option value="6">6</option>
+                        <option value="7">7</option>
+                        <option value="8">8</option>
+                        <option value="9">9</option>
+                        <option value="10">10</option>
+                    </select>
+                </div>
+            </div>
+            <div class="form-group">
+                <label class="col-lg-2 control-label">Meses por Ciclo</label>
+                <div class="col-lg-4">
+                    <select id="inputMeses" name="inputMeses" class="form-control">
+                        <option value="">-- Meses por Ciclo --</option>
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5">5</option>
+                        <option value="6">6</option>
+                    </select>
+                </div>
+            </div>
+            <div class="col-lg-8 col-lg-offset-4">
+                <button type="reset" class="btn btn-default btn-sm" >Limpiar</button>
+                <button type="button" class="btn btn-info btn-sm" onclick="confirmSave('Y2FycmVyYQ==','Zm9ybUNhcnJlcmE=','gridCarreras();')" >Guardar</button>
+                <button type="button" class="btn btn-info btn-sm" onclick="searchCarrera()" >Buscar</button>
+            </div><br />
+        </form>
+    {include file="../structure/endWinget.tpl"}
+<!-- contenido -->
+	<div class="tableCarreras widget"></div>
+<!-- -->
+{include file="../structure/endMatterContent.tpl"}
+{include file="../structure/endMainbarContent.tpl"}
+
+{include file="../structure/endContent.tpl"}
+
+{include file="../structure/footer.tpl"}
+<!-- -->
+{include file="../structure/bodyEnd.tpl"}
+{include file="../structure/HTMLEnd.tpl"}
